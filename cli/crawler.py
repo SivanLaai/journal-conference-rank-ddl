@@ -3,9 +3,7 @@ import requests
 import yaml
 from termcolor import colored
 from argparse import ArgumentParser
-from copy import deepcopy
 from datetime import datetime
-from tabulate import tabulate
 from datetime import timezone
 from models import *
 from lxml import etree
@@ -13,7 +11,8 @@ from sqlalchemy import and_
 
 from io import StringIO, BytesIO
 class Crawler:
-    db = initDB()
+    def __init__(self, sql_url):
+        self.db = initDB(sql_url)
     def parseTz(self, tz):
         if tz == "AoE":
             return "-1200"
@@ -25,21 +24,6 @@ class Crawler:
             return "+0000"
 
 
-    def parse_args(self):
-        parser = ArgumentParser(description="cli for ccfddl")
-        parser.add_argument("--conf", type=str, nargs='+', 
-                            help="A list of conference ids you want to filter, e.g.: '--conf CVPR ICML'")
-        parser.add_argument("--sub", type=str, nargs='+', 
-                            help="A list of subcategories ids you want to filter, e.g.: '--sub AI CG'")
-        parser.add_argument("--rank", type=str, nargs='+', 
-                            help="A list of ranks you want to filter, e.g.: '--rank C N'")
-        args = parser.parse_args()
-        # Convert all arguments to lowercase
-        for arg_name in vars(args):
-            arg_value = getattr(args, arg_name)
-            if arg_value:
-                setattr(args, arg_name, [arg.lower() for arg in arg_value])
-        return args
 
 
     def formatDuraton(self, ddl_time: datetime, now: datetime) -> str:
@@ -285,7 +269,22 @@ sec-ch-ua-platform: "Windows"'''.replace(": ",":")
             yaml.safe_dump(list(Confs), file, sort_keys=False, allow_unicode=True)
 
 
+def parse_args():
+    parser = ArgumentParser(description="cli for eda")
+    parser.add_argument("--sql_url", type=str, nargs='+', 
+                        help="SQL connect url")
+    args = parser.parse_args()
+    # Convert all arguments to lowercase
+    # for arg_name in vars(args):
+    #     arg_value = getattr(args, arg_name)
+    #     if arg_value:
+    #         setattr(args, arg_name, [arg.lower() for arg in arg_value])
+    return args
 if "__main__" == __name__:
-    info = Crawler().crawlConferenceFromWebsite()
-    info = Crawler().crawlConferenceFromCCFDDL()
-    info = Crawler().saveConferenceAndJournalInfo()
+    args = parse_args()
+    if len(args.sql_url):
+        sql_url = args.sql_url[0]
+    crawler = Crawler(sql_url)
+    info = crawler.crawlConferenceFromWebsite()
+    info = crawler.crawlConferenceFromCCFDDL()
+    info = crawler.saveConferenceAndJournalInfo()

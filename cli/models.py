@@ -58,13 +58,13 @@ class Journal(Base):
     review_duration = Column(Float)
     remark = Column(String(1000))
 
-def initDB():
+def initDB(sql_url):
     # 创建一个内存中的 SQLite 数据库
     if os.path.exists("./cli/sql.setting"):
         f = open("./cli/sql.setting", "r")
         engine = create_engine(open("./cli/sql.setting", "r").read(), echo=True)
     else:
-        return
+        engine = create_engine(sql_url, echo=True)
     
     # 创建会话
     Session = sessionmaker(bind=engine)
