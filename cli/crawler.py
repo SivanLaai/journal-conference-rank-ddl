@@ -286,4 +286,4 @@ if "__main__" == __name__:
     crawler = Crawler(sql_url)
     # info = crawler.crawlConferenceFromWebsite()
     # info = crawler.crawlConferenceFromCCFDDL()
-    info = crawler.saveConferenceAndJournalInfo()
+    # info = crawler.saveConferenceAndJournalInfo()
