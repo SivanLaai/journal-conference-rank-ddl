@@ -5,7 +5,6 @@ from termcolor import colored
 from argparse import ArgumentParser
 from copy import deepcopy
 from datetime import datetime
-from tabulate import tabulate
 from datetime import timezone
 from models import *
 from lxml import etree
