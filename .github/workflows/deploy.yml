@@ -36,11 +36,10 @@ jobs:
     - name: Assemble yml files
       run: |
         ls eda
-        mkdir -p public/eda && cd public/eda
-        cp ../../eda/confs.yml .
-        cp ../../eda/jours.yml .
-        cp ../../eda/types.yml .
-        cd ../..
+        # mkdir -p public/eda
+        # cp public/eda/confs.yml public/eda
+        # cp public/eda/jours.yml public/eda
+        # cp public/eda/types.yml public/eda
     - name: Get yarn cache directory path
       id: yarn-cache-dir-path
       run: echo "::set-output name=dir::$(yarn cache dir)"
