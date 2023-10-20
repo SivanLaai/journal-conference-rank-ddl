@@ -54,10 +54,11 @@ jobs:
       run: |
         yarn install
         yarn build
+        echo ${{secrets.WEB_SITE}} > ./dist/CNAME
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.ACCESS_TOKEN }}
+        github_token: ${{secrets.ACCESS_TOKEN}}
         publish_dir: ./dist
     # - name: Config Git
     #   run: |
