@@ -36,7 +36,7 @@ jobs:
     - name: Assemble yml files
       run: |
         ls eda
-        mkdir -p public/eda && cd public/eda
+        mkdir -p public/eda
         cp public/eda/confs.yml public/eda
         cp public/eda/jours.yml public/eda
         cp public/eda/types.yml public/eda
