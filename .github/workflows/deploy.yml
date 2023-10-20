@@ -27,7 +27,7 @@ jobs:
         python -m pip install -r ./cli/req.txt
     - name: generate yml files
       run: |
-        python ./cli/crawler.py
+        python ./cli/crawler.py --sql_url ${{secrets.SQL_URL}}
     - name: Validate yml files
       run: |
         python ./scripts/validate
