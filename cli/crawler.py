@@ -117,7 +117,6 @@ sec-ch-ua-platform: "Windows"'''.replace(": ",":")
             curr_conference = self.parseSingleNode(curr_tree, parser)
             if not curr_conference:
                 continue
-            print(curr_conference)
             id = curr_conference["id"]
             year = curr_conference["year"]
 
