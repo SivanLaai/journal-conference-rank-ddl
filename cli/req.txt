@@ -2,3 +2,4 @@ requests
 PyMySQL==1.1.0
 SQLAlchemy==2.0.22
 lxml==4.9.3
+termcolor
