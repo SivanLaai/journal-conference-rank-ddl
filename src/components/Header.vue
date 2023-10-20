@@ -1,24 +1,17 @@
 <template>
   <section>
     <el-row>
-      <a href="/" class="title">CCF Rec. Conference Deadlines</a>
-      <github-button style="padding-left: 5px"></github-button>
-      <span v-if="showLatestConf" style="color:#fd3c95;font-weight: bold;">Latest: {{this.showStr}} !!!</span>
+      <a href="/eda" class="title">EDA领域会议和期刊</a>
     </el-row>
     <el-row class="subtitle">
-      CCF Recommendation Conference Deadline Countdowns. To add/edit a conference, <a style="color: #666666" href="https://github.com/ccfddl/ccf-deadlines/pulls">send a pull request.</a>
-    </el-row>
-    <el-row class="subtitle">
-      Preview tabular demo: <a style="color: #666666" href="https://ccfddl.top/">https://ccfddl.top/</a>, or scan to try <a style="color: #666666" href="https://github.com/ccfddl/ccf-deadlines/blob/main/.readme_assets/applet_qrcode.jpg">wechat applet</a>.
+      收集EDA相关领域可以投的会议和期刊（点击下方按纽可以在会议和期刊之间来回切换）
     </el-row>
   </section>
 </template>
 
 <script>
-import GithubButton from './GithubButton'
 export default {
   name: 'Header',
-  components: {GithubButton},
   data() {
     return {
       showLatestConf: false,
@@ -54,6 +47,7 @@ export default {
 }
 .subtitle{
   padding-top: 15px;
+  padding-bottom: 15px;
   color: #666666;
 }
 </style>

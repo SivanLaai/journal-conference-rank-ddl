@@ -1,6 +1,5 @@
 <template>
   <section>
-    <Header></Header>
     <el-checkbox style="padding-top: 10px;width: 33%" :indeterminate="isIndeterminate" v-model="checkAll" @change="handleCheckAllChange"><span style="color: #666666">全选</span></el-checkbox>
     <el-checkbox-group v-model="checkList" @change="handleCheckedChange">
       <el-checkbox class="boxes" size="medium" v-for="item in subList" :label="item.sub" :key="item.sub"><span style="color: #666666">{{formatSubName(item)}}</span></el-checkbox>
@@ -31,9 +30,19 @@
         <template slot-scope="scope">
           <div :class="{ 'conf-fin': scope.row.status === 'FIN' }">
             <el-row class="conf-title">
-              <a :href="generateDBLP(scope.row.dblp)">{{scope.row.title}}</a> {{scope.row.year}}
-              <i v-if="scope.row.isLike===true" class="el-icon-star-on" style="color: #FBCA04" @click="handleClickIcon(scope.row, true)"/>
-              <i v-else class="el-icon-star-off" @click="handleClickIcon(scope.row, false)"/>
+              <a :href="scope.row.home_link">{{scope.row.title}}</a> {{scope.row.year}}
+              <i @click="jump2DBLP(scope.row.dblp)">
+                <svg-icon icon-class="dblp" />
+              </i>
+              <i @click="open(scope.row.remark, scope.row.title)">
+                <svg-icon icon-class="note" />
+              </i>
+              <i v-if="scope.row.isLike === true" @click="handleClickIcon(scope.row, true)">
+                <svg-icon icon-class="star-on" />
+              </i>
+              <i v-else @click="handleClickIcon(scope.row, false)">
+                <svg-icon icon-class="star-off" />
+              </i>
             </el-row>
             <el-row>{{scope.row.date+' '+scope.row.place}}</el-row>
             <el-row class="conf-des">{{scope.row.description}}</el-row>
@@ -87,10 +96,10 @@
       </el-table-column>
     </el-table>
     <el-row style="padding-top: 8px">
-      <div style="float: left; color: #666666;font-size: 12px;">
+      <!-- <div style="float: left; color: #666666;font-size: 12px;">
         <div>ccf-deadlines is maintained by <a href="https://github.com/jacklightChen">@jacklightChen</a> and <a href="https://github.com/0x4f5da2">@0x4f5da2</a>.</div>
         <div style="padding-top: 3px">If you find it useful, try find <a href="https://github.com/0x4f5da2">him</a> a girlfriend or follow <a href="https://www.researchgate.net/profile/Zhihao_Chen23">him</a> on ResearchGate.</div>
-      </div>
+      </div> -->
       <div style="float: right">
         <el-pagination
             background
@@ -108,7 +117,6 @@
 </template>
 
 <script>
-import Header from './Header'
 import TimeLine from "./TimeLine";
 const yaml = require('js-yaml')
 const moment = require('moment-timezone')
@@ -116,7 +124,6 @@ const tz = moment.tz.guess()
 export default {
   name: "Home",
   components: {
-    Header,
     TimeLine
   },
   data() { return {
@@ -133,7 +140,7 @@ export default {
       typeMap: new Map(),
       timeZone: '',
       utcMap: new Map(),
-      rankoptions: {'A': 'CCF A', 'B': 'CCF B', 'C': 'CCF C', 'N': 'Non-CCF', 'Q1': '中科院1区', 'Q2': '中科院2区', 'Q3': '中科院3区', 'Q4': '中科院4区'},
+      rankoptions: {'A': 'CCF A', 'B': 'CCF B', 'C': 'CCF C', 'N': 'Non-CCF'},
       typesList: [],
       rankList: [],
       cachedLikes: [],
@@ -142,9 +149,24 @@ export default {
     }
   },
   methods: {
+    open(remark, title) {
+      this.$alert(remark, title, {
+        confirmButtonText: 'OK',
+        // callback: action => {
+        //   this.$message({
+        //     type: 'info',
+        //     message: `action: ${action}`
+        //   });
+        // }
+      });
+    },
+    jump2DBLP(dblp) {
+      let dblpUrl = this.generateDBLP(dblp)
+      window.open(dblpUrl)
+    },
     loadFile () {
       this.timeZone = tz
-      this.$http.get(this.publicPath + 'conference/types.yml').then(response => {
+      this.$http.get(this.publicPath + 'types.yml').then(response => {
         const doc = yaml.load(response.body)
         this.subList = doc
         for (let i = 0; i < this.subList.length; i++) {
@@ -160,7 +182,7 @@ export default {
     },
     getAllConf() {
       // get all conf
-      this.$http.get(this.publicPath + 'conference/allconf.yml').then(response => {
+      this.$http.get(this.publicPath + 'confs.yml').then(response => {
         const allconf = yaml.load(response.body)
         // preprocess
         let doc = []

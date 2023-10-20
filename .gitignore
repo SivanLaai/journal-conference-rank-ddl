@@ -22,3 +22,7 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+sql.setting
+__pycache__
+package-lock.json
+build.sh

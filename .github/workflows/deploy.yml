@@ -23,14 +23,19 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         python -m pip install PyYAML jsonschema
+        python -m pip install -r ./cli/req.txt
+    - name: generate yml files
+      run: |
+        python ./cli/crawler.py
     - name: Validate yml files
       run: |
         python ./scripts/validate
     - name: Assemble yml files
       run: |
-        mkdir -p public/conference && cd public/conference
-        awk 1 `find ../../conference -name '*.yml' -not -path '**/types.yml'` > allconf.yml
-        cp ../../conference/types.yml .
+        mkdir -p public/eda && cd public/eda
+        cp ../../eda/confs.yml .
+        cp ../../eda/jours.yml .
+        cp ../../eda/types.yml .
         cd ../..
     - name: Get yarn cache directory path
       id: yarn-cache-dir-path
@@ -48,8 +53,8 @@ jobs:
         yarn build
     - name: Config Git
       run: |
-        git config --global user.email "me@4f5da2.com"
-        git config --global user.name "0x4f5da2"
+        git config --global user.email "lyhhap@163.com"
+        git config --global user.name "SivanLaai"
     - name: Deploy
       run: |
         cd dist
