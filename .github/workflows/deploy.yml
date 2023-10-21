@@ -33,12 +33,12 @@ jobs:
     # - name: Validate yml files
     #   run: |
     #     python ./scripts/validate
-    - name: Assemble yml files
-      run: |
-        mkdir -p public/data
-        cp -rf data/confs.yml public/data
-        cp -rf data/jours.yml public/data
-        cp -rf data/types.yml public/data
+    # - name: Assemble yml files
+    #   run: |
+    #     mkdir -p public/data
+    #     cp -rf data/confs.yml public/data
+    #     cp -rf data/jours.yml public/data
+    #     cp -rf data/types.yml public/data
     - name: Get yarn cache directory path
       id: yarn-cache-dir-path
       run: echo "::set-output name=dir::$(yarn cache dir)"
