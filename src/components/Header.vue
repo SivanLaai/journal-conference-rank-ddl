@@ -1,10 +1,15 @@
 <template>
   <section>
     <el-row>
-      <a href="/eda" class="title">EDA领域会议和期刊</a>
+      <a href="/" class="title">研究领域的相关会议和期刊</a>
     </el-row>
     <el-row class="subtitle">
-      收集EDA相关领域可以投的会议和期刊（点击下方按纽可以在会议和期刊之间来回切换）
+      收集个人所关注领域相关的会议和期刊，以较清晰的逻辑列表展示，辅助科研
+      <svg-icon style="height: 20px; width: 20px;" icon-class="celebration" />
+      <svg-icon style="height: 20px; width: 20px;" icon-class="cheers" />
+      <p>
+      （点击下方按纽可以在会议和期刊之间来回切换）
+      </p>
     </el-row>
   </section>
 </template>

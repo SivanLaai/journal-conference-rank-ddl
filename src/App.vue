@@ -1,9 +1,13 @@
 <template>
   <div id="app">
     <Header></Header>
-    <el-switch style="display: block; margin-bottom: 15px;" v-model="select" active-color="#13ce66"
+    <el-row>
+    <svg-icon style="float: left; width: 20px; height: 20px;" icon-class="conference" />
+    <el-switch style="display: block; margin-bottom: 15px; float: left;" v-model="select" active-color="#13ce66"
       inactive-color="purple" active-text="学术期刊" inactive-text="学术会议">
     </el-switch>
+    <svg-icon style="float: left; width: 20px; height: 20px;" icon-class="journal" />
+    </el-row>
     <div v-if="select === false">
       <Conference></Conference>
     </div>

@@ -10,7 +10,13 @@
         <div>
           Based on <a href="https://github.com/ccfddl/ccf-deadlines" target="_blank" title="icp" alt="icp">ccfddl</a>
         </div>
-        <div style="padding-top: 3px">{{ icp }}</div>
+        <el-row>
+        <div style="padding-top: 3px"><img src="/gov.png" class="w-full"> 
+          <el-link class="footer-text" href="https://beian.mps.gov.cn/#/query/webSearch?code=11011602001037\" rel="noreferrer" target="_blank">{{ gov }} </el-link>
+          {{ icp }}
+        </div>
+
+        </el-row>
       </div>
     </el-row>
   </section>
@@ -23,7 +29,7 @@ export default {
     return {
       author: 'SivanLaai',
       icp: '京ICP备2023014024号-1',
-      gov: ''
+      gov: '京公网安备11011602001037'
     }
   },
   mounted() {
@@ -32,6 +38,14 @@ export default {
 </script>
 
 <style scoped>
+.footer-text {
+  color: #666666;
+  font-size: 12px;
+}
+.w-full {
+  height: 14px;
+  margin-right: 3px;
+}
 .icp{
   font-size: 16px;
   color: #2c3e50;

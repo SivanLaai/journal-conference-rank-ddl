@@ -2,6 +2,7 @@
   <section>
     <el-checkbox style="padding-top: 10px;width: 33%" :indeterminate="isIndeterminate" v-model="checkAll"
       @change="handleCheckAllChange"><span style="color: #666666">全选</span></el-checkbox>
+
     <el-checkbox-group v-model="checkList" @change="handleCheckedChange">
       <el-checkbox class="boxes" size="medium" v-for="item in subList" :label="item.sub" :key="item.sub"><span
           style="color: #666666">{{ formatSubName(item) }}</span></el-checkbox>

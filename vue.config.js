@@ -24,7 +24,7 @@ module.exports = {
             entry: 'src/main.js',
             template: 'public/index.html',
             filename: 'index.html',
-            title: 'EDA相关会议和期刊',
+            title: '研究领域的相关会议和期刊',
         }
     },
     // assetsDir: 'eda',
