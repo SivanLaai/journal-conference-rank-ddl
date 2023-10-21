@@ -27,5 +27,5 @@ module.exports = {
             title: 'EDA相关会议和期刊',
         }
     },
-    assetsDir: 'eda',
+    // assetsDir: 'eda',
 }

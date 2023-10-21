@@ -11,8 +11,13 @@ from sqlalchemy import and_
 
 from io import StringIO, BytesIO
 class Crawler:
-    def __init__(self, sql_url):
-        self.db = initDB(sql_url)
+    def __init__(self, sql_url, source_url):
+        try:
+            self.db = initDB(sql_url)
+            self.source_url = source_url
+        except Exception as e:
+            print(e)
+            self.db = None
     def parseTz(self, tz):
         if tz == "AoE":
             return "-1200"
@@ -102,8 +107,7 @@ sec-ch-ua: "Chromium";v="118", "Microsoft Edge";v="118", "Not=A?Brand";v="99"
 sec-ch-ua-mobile: ?0
 sec-ch-ua-platform: "Windows"'''.replace(": ",":")
         header = self.format_header(head)
-        html = requests.get(
-            "https://www.cse.chalmers.se/research/group/vlsi/conference/", headers=header).content.decode("utf-8")
+        html = requests.get(self.source_url, headers=header).content.decode("utf-8")
         parser = etree.HTMLParser()
         tree = etree.parse(StringIO(str(html)), parser=parser)
         if tree is None:
@@ -137,6 +141,9 @@ sec-ch-ua-platform: "Windows"'''.replace(": ",":")
         return final_datas
         
     def crawlConferenceFromCCFDDL(self):
+        if not self.db:
+            print("sql session is None, Exit")
+            return
         yml_str = requests.get(
             "https://ccfddl.github.io/conference/allconf.yml").content.decode("utf-8")
         all_conf = yaml.safe_load(yml_str)
@@ -177,6 +184,9 @@ sec-ch-ua-platform: "Windows"'''.replace(": ",":")
                     self.db.commit()
 
     def getConferenceList(self):
+        if not self.db:
+            print("sql session is None, Exit")
+            return
         eda_confs = [conf for conf in self.db.query(Conference).all()]
         self.db.commit()
         Confs = dict()
@@ -222,6 +232,9 @@ sec-ch-ua-platform: "Windows"'''.replace(": ",":")
         return list(Confs.values())
 
     def getJournalList(self):
+        if not self.db:
+            print("sql session is None, Exit")
+            return
         eda_jours = [jour for jour in self.db.query(Journal).all()]
         self.db.commit()
   
@@ -259,19 +272,19 @@ sec-ch-ua-platform: "Windows"'''.replace(": ",":")
         Jours = self.getJournalList()
 
         yaml.dump(Jours, sort_keys=False, allow_unicode=True)
-        with open(r'eda/jours.yml', 'w') as file:
+        with open(r'data/jours.yml', 'w') as file:
             yaml.safe_dump(Jours, file, sort_keys=False, allow_unicode=True)
 
         Confs = self.getConferenceList()
         yaml.dump(list(Confs), sort_keys=False, allow_unicode=True)
-        with open(r'eda/confs.yml', 'w') as file:
+        with open(r'data/confs.yml', 'w') as file:
             yaml.safe_dump(list(Confs), file, sort_keys=False, allow_unicode=True)
 
 
 def parse_args():
     parser = ArgumentParser(description="cli for eda")
-    parser.add_argument("--sql_url", type=str, nargs='+', 
-                        help="SQL connect url")
+    parser.add_argument("--sql_url", type=str, help="SQL connect url")
+    parser.add_argument("--source_url", type=str, help="Web source url")
     args = parser.parse_args()
     # Convert all arguments to lowercase
     # for arg_name in vars(args):
@@ -281,9 +294,7 @@ def parse_args():
     return args
 if "__main__" == __name__:
     args = parse_args()
-    if len(args.sql_url):
-        sql_url = args.sql_url[0]
-    crawler = Crawler(sql_url)
-    info = crawler.crawlConferenceFromWebsite()
-    info = crawler.crawlConferenceFromCCFDDL()
-    info = crawler.saveConferenceAndJournalInfo()
+    crawler = Crawler(args.sql_url, args.source_url)
+    # info = crawler.crawlConferenceFromWebsite()
+    # info = crawler.crawlConferenceFromCCFDDL()
+    # info = crawler.saveConferenceAndJournalInfo()

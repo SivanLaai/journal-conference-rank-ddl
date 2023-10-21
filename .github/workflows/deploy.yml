@@ -29,17 +29,16 @@ jobs:
         python -m pip install -r ./cli/req.txt
     - name: generate yml files
       run: |
-        python ./cli/crawler.py --sql_url ${{secrets.SQL_URL}}
+        python ./cli/crawler.py --sql_url ${{secrets.SQL_URL}} --source_url ${{vars.SOURCE_URL}}
     # - name: Validate yml files
     #   run: |
     #     python ./scripts/validate
     - name: Assemble yml files
       run: |
-        ls eda
-        # mkdir -p public/eda
-        # cp public/eda/confs.yml public/eda
-        # cp public/eda/jours.yml public/eda
-        # cp public/eda/types.yml public/eda
+        mkdir -p public/data
+        cp -rf data/confs.yml public/data
+        cp -rf data/jours.yml public/data
+        cp -rf data/types.yml public/data
     - name: Get yarn cache directory path
       id: yarn-cache-dir-path
       run: echo "::set-output name=dir::$(yarn cache dir)"
@@ -54,7 +53,7 @@ jobs:
       run: |
         yarn install
         yarn build
-        echo ${{secrets.WEB_SITE}} > ./dist/CNAME
+        echo ${{vars.WEB_URL}} > ./dist/CNAME
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:

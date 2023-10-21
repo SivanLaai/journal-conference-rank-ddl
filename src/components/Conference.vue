@@ -127,7 +127,7 @@ export default {
     TimeLine
   },
   data() { return {
-      publicPath: '/eda/',
+      publicPath: '/data/',
       checkAll: true,
       isIndeterminate: false,
       pageSize: 10,

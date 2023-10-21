@@ -82,12 +82,6 @@
       </el-table-column>
     </el-table>
     <el-row style="padding-top: 8px">
-      <div style="float: left; color: #666666;font-size: 12px;">
-        <div>ccf-deadlines is maintained by <a href="https://github.com/jacklightChen">@jacklightChen</a> and <a
-            href="https://github.com/0x4f5da2">@0x4f5da2</a>.</div>
-        <div style="padding-top: 3px">If you find it useful, try find <a href="https://github.com/0x4f5da2">him</a> a
-          girlfriend or follow <a href="https://www.researchgate.net/profile/Zhihao_Chen23">him</a> on ResearchGate.</div>
-      </div>
       <div style="float: right">
         <el-pagination background small layout="prev, pager, next" :page-size=pageSize
           @current-change="handleCurrentChange" :current-page="page" :total=showNumber>
@@ -108,7 +102,7 @@ export default {
   },
   data() {
     return {
-      publicPath: '/eda/',
+      publicPath: '/data/',
       checkAll: true,
       isIndeterminate: false,
       pageSize: 10,

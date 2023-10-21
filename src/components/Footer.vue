@@ -1,14 +1,17 @@
 
 <template>
   <section class="footer">
-    <el-row class="icp">
-      Powered By <a href="https://github.com/SivanLaai" target="_blank" title="icp" alt="icp">{{ author }}</a>
-    </el-row>
-    <el-row class="icp">
-      Based on <a href="https://github.com/ccfddl/ccf-deadlines" target="_blank" title="icp" alt="icp">ccfddl</a>
-    </el-row>
-    <el-row class="icp">
-      <a target="_blank" title="icp" alt="icp">{{ icp }}</a>
+
+    <el-row style="padding-top: 8px">
+      <div style="float: center; text-align: center; color: #666666;font-size: 12px;">
+        <div>
+          Powered By <a href="https://github.com/SivanLaai" target="_blank" title="icp" alt="icp">{{ author }}</a>
+        </div>
+        <div>
+          Based on <a href="https://github.com/ccfddl/ccf-deadlines" target="_blank" title="icp" alt="icp">ccfddl</a>
+        </div>
+        <div style="padding-top: 3px">{{ icp }}</div>
+      </div>
     </el-row>
   </section>
 </template>
