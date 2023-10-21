@@ -13,8 +13,8 @@ from io import StringIO, BytesIO
 class Crawler:
     def __init__(self, sql_url, source_url):
         try:
-            self.db = initDB(sql_url)
             self.source_url = source_url
+            self.db = initDB(sql_url)
         except Exception as e:
             print(e)
             self.db = None
@@ -91,7 +91,9 @@ class Crawler:
         return curr_basic_dict
 
     def crawlConferenceFromWebsite(self):
-        head='''Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+        final_datas = list()
+        try:
+            head='''Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
 Accept-Encoding: gzip, deflate, br
 Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
 Cache-Control: max-age=0
@@ -106,37 +108,38 @@ User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
 sec-ch-ua: "Chromium";v="118", "Microsoft Edge";v="118", "Not=A?Brand";v="99"
 sec-ch-ua-mobile: ?0
 sec-ch-ua-platform: "Windows"'''.replace(": ",":")
-        header = self.format_header(head)
-        html = requests.get(self.source_url, headers=header).content.decode("utf-8")
-        parser = etree.HTMLParser()
-        tree = etree.parse(StringIO(str(html)), parser=parser)
-        if tree is None:
-            return final_datas
-        final_datas = list()
-        x_path = '//table//tr'
-        treeNodes = tree.xpath(x_path)
-        for curr_node in treeNodes:
-            curr_html = etree.tostring(curr_node)
-            curr_tree = etree.parse(StringIO(str(curr_html)), parser=parser)
-            curr_conference = self.parseSingleNode(curr_tree, parser)
-            if not curr_conference:
-                continue
-            id = curr_conference["id"]
-            year = curr_conference["year"]
+            header = self.format_header(head)
+            html = requests.get(self.source_url, headers=header).content.decode("utf-8")
+            parser = etree.HTMLParser()
+            tree = etree.parse(StringIO(str(html)), parser=parser)
+            if tree is None:
+                return final_datas
+            x_path = '//table//tr'
+            treeNodes = tree.xpath(x_path)
+            for curr_node in treeNodes:
+                curr_html = etree.tostring(curr_node)
+                curr_tree = etree.parse(StringIO(str(curr_html)), parser=parser)
+                curr_conference = self.parseSingleNode(curr_tree, parser)
+                if not curr_conference:
+                    continue
+                id = curr_conference["id"]
+                year = curr_conference["year"]
 
-            confs = self.db.query(Conference).filter(Conference.id==id).all()
-            if not len(confs):
-                self.db.bulk_insert_mappings(Conference, [dict(id=id, name=curr_conference["name"])])
-                self.db.commit()
+                confs = self.db.query(Conference).filter(Conference.id==id).all()
+                if not len(confs):
+                    self.db.bulk_insert_mappings(Conference, [dict(id=id, name=curr_conference["name"])])
+                    self.db.commit()
 
-            confs = self.db.query(ConferenceDetail).filter(ConferenceDetail.id==id, ConferenceDetail.year==year).all()
-            del curr_conference["name"]
-            if len(confs):
-                self.db.query(ConferenceDetail).filter(ConferenceDetail.id==id, ConferenceDetail.year==year).update(curr_conference)
-                self.db.commit()
-            else:
-                self.db.bulk_insert_mappings(ConferenceDetail, [curr_conference])
-                self.db.commit()
+                confs = self.db.query(ConferenceDetail).filter(ConferenceDetail.id==id, ConferenceDetail.year==year).all()
+                del curr_conference["name"]
+                if len(confs):
+                    self.db.query(ConferenceDetail).filter(ConferenceDetail.id==id, ConferenceDetail.year==year).update(curr_conference)
+                    self.db.commit()
+                else:
+                    self.db.bulk_insert_mappings(ConferenceDetail, [curr_conference])
+                    self.db.commit()
+        except Exception as e:
+            print(e)
             
         return final_datas
         
@@ -269,22 +272,26 @@ sec-ch-ua-platform: "Windows"'''.replace(": ",":")
         return Jours
     
     def saveConferenceAndJournalInfo(self):
-        Jours = self.getJournalList()
+        try:
+            Jours = self.getJournalList()
 
-        yaml.dump(Jours, sort_keys=False, allow_unicode=True)
-        with open(r'data/jours.yml', 'w') as file:
-            yaml.safe_dump(Jours, file, sort_keys=False, allow_unicode=True)
+            # yaml.dump(Jours, sort_keys=False, allow_unicode=True)
+            with open(r'data/jours.yml', 'w') as file:
+                yaml.safe_dump(Jours, file, sort_keys=False, allow_unicode=True)
 
-        Confs = self.getConferenceList()
-        yaml.dump(list(Confs), sort_keys=False, allow_unicode=True)
-        with open(r'data/confs.yml', 'w') as file:
-            yaml.safe_dump(list(Confs), file, sort_keys=False, allow_unicode=True)
+            Confs = self.getConferenceList()
+            # yaml.dump(list(Confs), sort_keys=False, allow_unicode=True)
+            with open(r'data/confs.yml', 'w') as file:
+                yaml.safe_dump(list(Confs), file, sort_keys=False, allow_unicode=True)
+        except Exception as e:
+            print(e)
+
 
 
 def parse_args():
     parser = ArgumentParser(description="cli for eda")
-    parser.add_argument("--sql_url", type=str, help="SQL connect url")
-    parser.add_argument("--source_url", type=str, help="Web source url")
+    parser.add_argument("--sql_url", type=str, help="SQL connect url", default=None)
+    parser.add_argument("--source_url", type=str, help="Web source url", default=None)
     args = parser.parse_args()
     # Convert all arguments to lowercase
     # for arg_name in vars(args):
