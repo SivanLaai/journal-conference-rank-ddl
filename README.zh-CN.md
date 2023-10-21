@@ -1,37 +1,27 @@
-# CCF-Deadlines
+# Journal-Conference-Rank-Deadlines
 
-[![LICENSE](https://img.shields.io/github/license/ccfddl/ccf-deadlines)](https://github.com/ccfddl/ccf-deadlines/blob/main/LICENSE)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/ccfddl/ccf-deadlines/.github/workflows/deploy.yml?branch=main)](https://github.com/ccfddl/ccf-deadlines/commits/main)
-[![Open PRs](https://img.shields.io/github/issues-pr/ccfddl/ccf-deadlines)](https://github.com/ccfddl/ccf-deadlines/pulls)
+[![LICENSE](https://img.shields.io/github/license/ccfddl/ccf-deadlines)](https://github.com/ccfddl/ccf-deadlines/blob/main/LICENSE) 
+Based on [CCFDDL](https://github.com/ccfddl/ccf-deadlines)
+
+# 为什么?
+- CCFDDL显示太多的会议了，且有些自己关注的会议有延期不会及时更新，对于大部分研究人员说，只关心自己本领域的会议
+- 添加自己关注的领域的期刊列表，支持添加期刊审稿周期、期刊篇幅、期刊投稿网址和接受率
+- 期刊和会议，支持添加备注
 
 简体中文 | [English](./README.md)
 
-帮助计算机类科研人员追踪[中国计算机学会 (CCF)](https://www.ccf.org.cn/)推荐国际学术会议的截稿日期。
+帮助需要关注自己本领域的科研人员追踪会议的投稿时间，同时关注收集自己的意向期刊。
 
-| <div style="width:330px">[网站预览 (主页)](https://ccfddl.github.io/)</div> | <div style="width:330px">[表格预览](https://ccfddl.top/) <br> [无需科学上网]</div> | <div style="width:330px">[客户端预览](https://github.com/ccfddl/ccf-deadlines/tree/main/cli) <br> [Work In Progress] </div> |
-| :----: | :----: | :----: |
-| <img src=".readme_assets/screenshot_website.png" width="300px"/> | <img src=".readme_assets/screenshot_tabular.png" width="300px"/> | <img src=".readme_assets/screenshot_pycli.png" width="300px"/> |
+| <div style="width:330px">[网站预览 (主页)](https://ccfddl.github.io/)</div> | <div style="width:330px">[表格预览](https://ccfddl.top/) <br> [无需科学上网]</div> |
+| :----: | :----: |
+| <img src=".readme_assets/screenshot_website.png" width="300px"/> | <img src=".readme_assets/screenshot_tabular.png" width="300px"/> |
 
-| <div style="width:330px">[微信小程序](https://github.com/ccfddl/ccf-deadlines/tree/main/.readme_assets/applet_qrcode.jpg) <br> [Work In Progress]</div> |
-| :----: |
-| <img src=".readme_assets/applet_qrcode.jpg" width="200px"/> |
 
-**对麻烦的查找会议和转换时间说拜拜!**
-
-## 增加/更新 会议
-
-欢迎一起帮忙维护会议的相关信息! 如想要进一步做贡献或吹水，可通过发送邮件给[chenzh@stu.ecnu.edu.cn](chenzh@stu.ecnu.edu.cn)，请使用edu邮箱并附上wechatid，加入 [CCFDDL](https://github.com/ccfddl) 组织。
-
-增加或删除会议信息:
-- Fork 这个仓库
-- 增加/更新yml文件 conference/conf_type/conf_name.yml
-- 提交 [pull request](https://github.com/ccfddl/ccf-deadlines/pulls)
-
-提示: 可检查 [会议推荐目录](.readme_assets/ccf_recommended_2022.pdf) 和 [统计表格](https://docs.qq.com/sheet/DR3F1Tm1jcnlzVFJ2)
+**构建一个属于自己的科研规划平台!**
 
 ## 会议录入文件
 
-示例文件: conference/DB/sigmod.yml
+文件: data/confs.yml
 
 ```yaml
 - title: SIGMOD
@@ -39,6 +29,7 @@
   sub: DB
   rank: A
   dblp: sigmod
+  remark: 系统领域顶会
   confs:
     - year: 2022
       id: sigmod22
@@ -79,6 +70,109 @@
    <tr>
       <td colspan="3"><code>dblp</code>*</td>
       <td>会议在dblp的URL的后缀, 示例, <code>iccv</code> in https://dblp.uni-trier.de/db/conf/iccv</td>
+   </tr>
+   <tr>
+      <td colspan="3"><code>remark</code>*</td>
+      <td>添加对于会议的一些备注, 示例, 会议难度较大 </td>
+   </tr>
+   <tr>
+      <td rowspan="9"><code>confs</code></td>
+      <td colspan="2"><code>year</code>*</td>
+      <td>会议的年份</td>
+   </tr>
+   <tr>
+      <td colspan="2"><code>id</code>*</td>
+      <td>会议名字和年份, 小写</td>
+   </tr>
+   <tr>
+      <td colspan="2"><code>link</code>*</td>
+      <td>会议首页的URL</td>
+   </tr>
+   <tr>
+      <td rowspan="3"><code>timeline</code>*</td>
+      <td><code>abstract_deadline</code></td>
+      <td>Abstract的截稿日期, 可选填</td>
+   </tr>
+   <tr>
+      <td><code>deadline</code>*</td>
+      <td>截稿日期, 格式为 <code>yyyy-mm-dd hh:mm:ss</code> or <code>TBD</code></td>
+   </tr>
+   <tr>
+      <td><code>comment</code></td>
+      <td>额外的一些辅助信息, 可选填</td>
+   </tr>
+   <tr>
+      <td colspan="2"><code>timezone</code>*</td>
+      <td>截稿日期的时区, 目前支持 <code>UTC-12</code> ~ <code>UTC+12</code> & <code>AoE</code></td>
+   </tr>
+   <tr>
+      <td colspan="2"><code>date</code>*</td>
+      <td>会议举办的日期, 示例, Mar 12-16, 2021</td>
+   </tr>
+   <tr>
+      <td colspan="2"><code>place</code>*</td>
+      <td>会议举办的地点, 示例, <code>city, country</code></td>
+   </tr>
+</table>
+
+## 期刊录入文件
+
+文件: data/jours.yml
+
+```yaml
+- title: JSSC
+  description: IEEE Journal of Solid-State Circuits
+  acceptance_rate: 0.15
+  submission: https://submission.com
+  dblp: jssc
+  page: 15
+  review_duration: 6
+  ranks:
+  - casQ1
+  remark: 一区Top，最顶级期刊没有之一，实至名归没有什么好说的
+  sub: DS
+  id: jssc
+  link: https://journal.home.com
+```
+
+字段描述:
+
+<table>
+   <tr>
+      <th colspan="3">字段名</th>
+      <th>描述</th>
+   </tr>
+   <tr>
+      <td colspan="3"><code>title</code>*</td>
+      <td>缩写的期刊名称, 大写</td>
+   </tr>
+   <tr>
+      <td colspan="3"><code>description</code>*</td>
+      <td>介绍, 或全称</td>
+   </tr>
+   <tr>
+      <td colspan="3"><code>acceptance_rate</code>*</td>
+      <td>接受率, 如0.15 表示 接收率15%</td>
+   </tr>
+   <tr>
+      <td colspan="3"><code>submission</code>*</td>
+      <td>期刊投搞网址</td>
+   </tr>
+   <tr>
+      <td colspan="3"><code>sub</code>*</td>
+      <td>会议在CCF中被标注的类别, 可参考下面的辅助文档</td>
+   </tr>
+   <tr>
+      <td colspan="3"><code>rank</code>*</td>
+      <td>会议在CCF\JCR\中科院分区表中被标注的等级和影响因子, <code>CCF: A\B\C</code>, 中科院分区: <code> casQ1\casQ2\casQ3\casQ4</code>, JCR: <code>jcrQ1\jcrQ2\jcrQ3\jcrQ4</code>, 影响因子: <code>IF 5.5</code></td>
+   </tr>
+   <tr>
+      <td colspan="3"><code>dblp</code>*</td>
+      <td>会议在dblp的URL的后缀, 示例, <code>jssc</code> in https://dblp.uni-trier.de/db/journal/jssc</td>
+   </tr>
+   <tr>
+      <td colspan="3"><code>remark</code>*</td>
+      <td>添加对于会议的一些备注, 示例, 期刊难度较大 </td>
    </tr>
    <tr>
       <td rowspan="9"><code>confs</code></td>
@@ -136,29 +230,6 @@
 | `AI`        | 人工智能                                                  |
 | `HI`        | 人机交互与普适计算                                        |
 | `MX`       | 交叉/综合/新兴                                            |
-
-## 社区动态 [![Time period](https://images.repography.com/34277855/ccfddl/ccf-deadlines/recent-activity/5fTrp8O5TMylbcyWax-RA4zvtLwFXQeUmCGlTEmHlOc/3ypSX5IK_DYSkrgdERBGvHuaPzIse7m6ydGPLX_wJKE_badge.svg)](https://repography.com)
-
-[![Timeline graph](https://images.repography.com/34277855/ccfddl/ccf-deadlines/recent-activity/5fTrp8O5TMylbcyWax-RA4zvtLwFXQeUmCGlTEmHlOc/3ypSX5IK_DYSkrgdERBGvHuaPzIse7m6ydGPLX_wJKE_timeline.svg)](https://github.com/ccfddl/ccf-deadlines/commits)
-[![Issue status graph](https://images.repography.com/34277855/ccfddl/ccf-deadlines/recent-activity/5fTrp8O5TMylbcyWax-RA4zvtLwFXQeUmCGlTEmHlOc/3ypSX5IK_DYSkrgdERBGvHuaPzIse7m6ydGPLX_wJKE_issues.svg)](https://github.com/ccfddl/ccf-deadlines/issues)
-[![Pull request status graph](https://images.repography.com/34277855/ccfddl/ccf-deadlines/recent-activity/5fTrp8O5TMylbcyWax-RA4zvtLwFXQeUmCGlTEmHlOc/3ypSX5IK_DYSkrgdERBGvHuaPzIse7m6ydGPLX_wJKE_prs.svg)](https://github.com/ccfddl/ccf-deadlines/pulls)
-[![Top contributors](https://images.repography.com/34277855/ccfddl/ccf-deadlines/recent-activity/5fTrp8O5TMylbcyWax-RA4zvtLwFXQeUmCGlTEmHlOc/3ypSX5IK_DYSkrgdERBGvHuaPzIse7m6ydGPLX_wJKE_users.svg)](https://github.com/ccfddl/ccf-deadlines/graphs/contributors)
-
-## 贡献
-
-本项目由 [@jacklightChen](https://github.com/jacklightChen), [@0x4f5da2](https://github.com/0x4f5da2), [@kzoacn](https://github.com/kzoacn), [@cubercsl](https://github.com/cubercsl), [@spingARbor](https://github.com/spingARbor), [@liborui](https://github.com/liborui), [@PAN-Ziyue](https://github.com/PAN-Ziyue), [@xuhangc](https://github.com/xuhangc), [@RyunMi](https://github.com/RyunMi), [@Lukangkang123](https://github.com/Lukangkang123), [@oliverck](https://github.com/oliverck), [@fffmath](https://github.com/fffmath), [@Allenpandas](https://github.com/Allenpandas), [@yuang-chen](https://github.com/yuang-chen), [@hepengfei5709](https://github.com/hepengfei5709), [@ViGeng](https://github.com/ViGeng) 共同维护。
-
-灵感来自于 [ai-deadlines](https://aideadlin.es/)。
-
-### 贡献的Git工作流
-
-我们推荐开源项目中常见的分支工作流。
-如下图所示，基本思想是为每个功能或错误修复创建一个新分支，然后将该新分支推送到fork的仓库中。
-所有更改将通过提 PR 来进行审查，然后合并到主分支中。
-
-<!-- make it smaller -->
-<!-- ![Branch-based Workflow](.readme_assets/branch_based_workflow.png) -->
-<img src=".readme_assets/branch_based_workflow.png" width="400px"/>
 
 ## License
 
