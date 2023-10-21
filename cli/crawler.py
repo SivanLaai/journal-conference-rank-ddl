@@ -295,6 +295,6 @@ def parse_args():
 if "__main__" == __name__:
     args = parse_args()
     crawler = Crawler(args.sql_url, args.source_url)
-    # info = crawler.crawlConferenceFromWebsite()
-    # info = crawler.crawlConferenceFromCCFDDL()
-    # info = crawler.saveConferenceAndJournalInfo()
+    info = crawler.crawlConferenceFromWebsite()
+    info = crawler.crawlConferenceFromCCFDDL()
+    info = crawler.saveConferenceAndJournalInfo()
