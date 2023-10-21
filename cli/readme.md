@@ -1,4 +1,4 @@
-# ccfddl cli
+# jours && conference cli
 
 WIP
 
@@ -6,17 +6,15 @@ WIP
 
 ```bash
 pip install -r req.txt
-python setup.py install
 ```
 
 ## usage
 
 ```bash
-python -m ccfddl
+python3 ./cli/crawler.py --sql_url mysql+pymysql://username:password@host:port/database?charset=utf8mb4 --source_url web_url
 ```
 
 | Argument | Type  | Description                          | Example            |
 | -------- | ----- | ------------------------------------ | ------------------ |
-| `--conf` | str[] | A list of conference IDs to filter.  | `--conf CVPR ICCV` |
-| `--sub`  | str[] | A list of subcategory IDs to filter. | `--sub AI ML`      |
-| `--rank` | str[] | A list of ranks to filter.           | `--rank A B`       |
+| `--sql_url` | str | A url to connect mysql.  | `--sql_url url` |
+| `--source_url`  | str | source url. | `--source_url http://example.com `      |
