@@ -21,10 +21,10 @@ Based on [CCFDDL](https://github.com/ccfddl/ccf-deadlines)
 **构建一个属于自己的科研规划平台!**
 ## 使用说明
 - 购买域名（可选，没有预算的直接使用github静态网址）
-- 给项目添加环境变量WEB_URL，如https://eda.laais.cn
+- 给项目添加环境变量WEB_URL，如https://test.laais.cn
 - 按如下修改你的配置文件
 - github action部署成功
-- 访问https://eda.laais.cn
+- 访问https://test.laais.cn
 
 
 ## 会议录入文件
