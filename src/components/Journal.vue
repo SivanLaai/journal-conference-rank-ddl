@@ -267,7 +267,7 @@ export default {
       let checkedCount = types.length
       this.checkAll = checkedCount === this.subList.length
       this.isIndeterminate = checkedCount > 0 && checkedCount < this.subList.length
-      this.$ls.set('types', Array.from(this.typesList))
+      this.$ls.set('joursTypes', Array.from(this.typesList))
       this.showConf(this.typesList, this.rankList, this.input, 1)
     },
     handleInputChange() {
@@ -275,7 +275,7 @@ export default {
     },
     handleRankChange(rank) {
       this.rankList = rank
-      this.$ls.set('ranks', Array.from(this.rankList))
+      this.$ls.set('joursRanks', Array.from(this.rankList))
       this.showConf(this.typesList, this.rankList, this.input, 1)
     },
     handleCurrentChange(page) {
@@ -285,7 +285,7 @@ export default {
       this.typesList = (this.checkList.length === this.subList.length) ? [] : this.subList.map((obj) => { return obj.sub }).join(",").split(',');
       this.checkList = this.typesList
       this.isIndeterminate = false
-      this.$ls.set('types', Array.from(this.typesList))
+      this.$ls.set('joursTypes', Array.from(this.typesList))
       this.showConf(this.typesList, this.rankList, this.input, 1)
     },
     handleClickIcon(record, judge) {
@@ -293,11 +293,11 @@ export default {
         record.isLike = false
         let index = this.cachedLikes.indexOf(record.title + record.id)
         if (index > -1) this.cachedLikes.splice(index, 1)
-        this.$ls.set('likes', Array.from(new Set(this.cachedLikes)))
+        this.$ls.set('joursLikes', Array.from(new Set(this.cachedLikes)))
       } else {
         record.isLike = true
         this.cachedLikes.push(record.title + record.id)
-        this.$ls.set('likes', Array.from(new Set(this.cachedLikes)))
+        this.$ls.set('joursLikes', Array.from(new Set(this.cachedLikes)))
       }
     },
     generateDBLP(name) {
@@ -315,7 +315,7 @@ export default {
       }
     },
     loadCachedTypes() {
-      let tmpList = this.$ls.get('types')
+      let tmpList = this.$ls.get('joursTypes')
       if (tmpList) {
         this.typesList = tmpList
         this.checkList = this.typesList
@@ -325,11 +325,11 @@ export default {
       }
     },
     loadCachedLikes() {
-      this.cachedLikes = this.$ls.get('likes')
+      this.cachedLikes = this.$ls.get('joursLikes')
       if (!this.cachedLikes) this.cachedLikes = []
     },
     loadCachedRanks() {
-      this.cachedRanks = this.$ls.get('ranks')
+      this.cachedRanks = this.$ls.get('joursRanks')
       if (!this.cachedRanks) this.cachedRanks = []
       this.rankList = this.cachedRanks
     },

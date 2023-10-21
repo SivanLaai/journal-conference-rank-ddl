@@ -25,4 +25,4 @@ pnpm-debug.log*
 sql.setting
 __pycache__
 package-lock.json
-build.sh
+*.sh
