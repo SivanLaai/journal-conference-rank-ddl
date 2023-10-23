@@ -34,7 +34,7 @@ class ConferenceDetail(Base):
     timezone = Column(String(255))
     abstract_deadline = Column(String(255))
     deadline = Column(TIMESTAMP)
-    extended_deadline = Column(TIMESTAMP)
+    extended_deadline = Column(String(255))
     place = Column(String(255))
     date = Column(TIMESTAMP)
     acceptance_rate = Column(Float)
