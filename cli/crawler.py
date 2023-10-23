@@ -223,7 +223,8 @@ sec-ch-ua-platform: "Windows"'''.replace(": ",":")
                     timeline.append(dict(deadline=str(curr.deadline), comment="Full Paper Deadline"))
                 if curr.extended_deadline:
                     for cur_ext_ddl in curr.extended_deadline.split(";"):
-                        timeline.append(dict(deadline=cur_ext_ddl, comment="Extended Full Paper Deadline"))
+                        if len(cur_ext_ddl):
+                            timeline.append(dict(deadline=cur_ext_ddl, comment="Extended Full Paper Deadline"))
                 if not len(timeline):
                     timeline.append(dict(deadline=f'2023-01-01 23:59:59', comment="Full Paper Deadline"))
                 curr_conf["timeline"] = timeline
