@@ -320,13 +320,13 @@
   confs:
   - year: 2024
     id: ets2024
-    link: null
+    link: https://ets24.ewi.tudelft.nl/
     timeline:
-    - deadline: '2023-01-01 23:59:59'
+    - deadline: '2023-12-08 23:59:59'
       comment: Full Paper Deadline
-    timezone: UTC+8
-    date: null
-    place: null
+    timezone: AoE
+    date: May 20-24, 2024
+    place: The Hague, Netherlands
 - title: Euromicro DSD
   description: null
   dblp: null
