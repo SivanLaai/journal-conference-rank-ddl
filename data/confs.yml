@@ -845,6 +845,15 @@
     timezone: UTC+8
     date: '2023-07-09'
     place: null
+  - year: 2024
+    id: sppcom2024
+    link: optica.org/PhotonicsOPC
+    timeline:
+    - deadline: '2024-04-09 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-07-28'
+    place: null
 - title: Symp VLSI Circuits
   description: null
   dblp: null
