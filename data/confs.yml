@@ -311,6 +311,23 @@
     timezone: UTC+8
     date: '2023-09-11'
     place: null
+- title: ESSERC
+  description: null
+  dblp: null
+  sub: DS
+  rank: N
+  home_link: null
+  remark: null
+  confs:
+  - year: 2024
+    id: esserc2024
+    link: https://www.esserc2024.org/
+    timeline:
+    - deadline: '2024-04-05 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-09-09'
+    place: null
 - title: ESWeek
   description: null
   dblp: null
@@ -529,6 +546,15 @@
       comment: Full Paper Deadline
     timezone: UTC+8
     date: '2023-08-07'
+    place: null
+  - year: 2024
+    id: islped2024
+    link: https://www.islped.org/2024/
+    timeline:
+    - deadline: '2024-03-11 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-08-05'
     place: null
 - title: ISOCC
   description: International SoC Conference
