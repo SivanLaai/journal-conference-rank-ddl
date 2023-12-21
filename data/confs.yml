@@ -641,6 +641,15 @@
     timezone: UTC+8
     date: '2023-06-20'
     place: null
+  - year: 2024
+    id: isvlsi2024
+    link: https://www.ieee-isvlsi.org/
+    timeline:
+    - deadline: '2024-03-04 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-07-01'
+    place: null
 - title: ITC
   description: International Test Conference
   dblp: null
