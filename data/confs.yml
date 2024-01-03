@@ -509,6 +509,23 @@
     timezone: UTC+8
     date: '2023-12-04'
     place: null
+- title: IEEE SiPS
+  description: null
+  dblp: null
+  sub: DS
+  rank: N
+  home_link: null
+  remark: null
+  confs:
+  - year: 2024
+    id: ieeesips2024
+    link: ieee-sips.org/
+    timeline:
+    - deadline: '2024-04-03 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-11-24'
+    place: null
 - title: ISCAS
   description: International Symposium on Circuits and Systems
   dblp: null
