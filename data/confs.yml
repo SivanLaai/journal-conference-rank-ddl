@@ -345,6 +345,15 @@
     timezone: UTC+8
     date: '2023-09-17'
     place: null
+  - year: 2024
+    id: esweek2024
+    link: https://esweek.org/
+    timeline:
+    - deadline: '2024-03-31 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-09-29'
+    place: null
 - title: ETS
   description: European Test Symposium
   dblp: null
