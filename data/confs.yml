@@ -84,6 +84,15 @@
     timezone: UTC+8
     date: '2023-10-29'
     place: null
+  - year: 2024
+    id: asilomarconf2024
+    link: https://www.asilomarsscconf.org/
+    timeline:
+    - deadline: '2024-05-01 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-10-27'
+    place: null
 - title: ASP-DAC
   description: Asia and South Pacific Design Automation Conference
   dblp: null
@@ -294,6 +303,15 @@
     timezone: UTC+8
     date: '2023-10-01'
     place: null
+  - year: 2024
+    id: ecoc2024
+    link: https://www.ecoc2024.org/
+    timeline:
+    - deadline: '2024-04-24 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-09-22'
+    place: null
 - title: ESSCIRC
   description: null
   dblp: null
@@ -434,6 +452,15 @@
       comment: Full Paper Deadline
     timezone: UTC+8
     date: '2023-06-05'
+    place: null
+  - year: 2024
+    id: glsvlsi2024
+    link: https://www.glsvlsi.org/
+    timeline:
+    - deadline: '2024-02-09 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-06-15'
     place: null
 - title: HOT CHIPS
   description: 'Hot Chips: A Symposium on High Performance Chips'
@@ -785,6 +812,15 @@
     timezone: UTC-7
     date: Oct, 2023
     place: Toronto, Canada
+  - year: 2024
+    id: micro2024
+    link: https://microarch.org/micro57/
+    timeline:
+    - deadline: '2024-04-18 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-11-02'
+    place: null
 - title: NeurIPS
   description: Conference on Neural Information Processing Systems
   dblp: null
@@ -907,6 +943,15 @@
     timezone: UTC-7
     date: October 30 - November 1, 2023
     place: California, USA
+  - year: 2024
+    id: socc2024
+    link: https://www.ieee-socc.org/
+    timeline:
+    - deadline: '2024-04-15 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-09-16'
+    place: null
 - title: SPPCom
   description: null
   dblp: null
@@ -983,6 +1028,15 @@
       comment: Full Paper Deadline
     timezone: UTC+8
     date: '2023-10-16'
+    place: null
+  - year: 2024
+    id: vlsisoc2024
+    link: https://vlsisoc2024.nl/
+    timeline:
+    - deadline: '2024-04-08 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-10-06'
     place: null
 - title: VLSI-TSA
   description: null
