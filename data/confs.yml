@@ -129,6 +129,15 @@
     timezone: UTC+8
     date: '2023-11-05'
     place: null
+  - year: 2024
+    id: asscc2024
+    link: https://a-sscc2024.org/
+    timeline:
+    - deadline: '2024-06-10 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-11-18'
+    place: null
 - title: ATS
   description: IEEE Asian Test Symposium
   dblp: null
@@ -545,6 +554,15 @@
     timezone: UTC+8
     date: '2023-12-04'
     place: null
+  - year: 2024
+    id: icecs2024
+    link: https://ieee-icecs2024.org/
+    timeline:
+    - deadline: '2024-06-03 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-11-18'
+    place: null
 - title: IEEE SiPS
   description: null
   dblp: null
@@ -625,6 +643,15 @@
       comment: Full Paper Deadline
     timezone: UTC+8
     date: '2023-10-25'
+    place: null
+  - year: 2024
+    id: isocc2024
+    link: https://isocc.org/
+    timeline:
+    - deadline: '2024-04-25 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-08-19'
     place: null
 - title: ISPD
   description: International Symposium on Physical Design
@@ -816,11 +843,13 @@
     id: micro2024
     link: https://microarch.org/micro57/
     timeline:
-    - deadline: '2024-04-18 00:00:00'
+    - deadline: '2024-04-11 11:59:59'
+      comment: Abstract Deadline
+    - deadline: '2024-04-18 11:59:59'
       comment: Full Paper Deadline
-    timezone: UTC+8
-    date: '2024-11-02'
-    place: null
+    timezone: UTC-5
+    date: November 2-6, 2024
+    place: Austin, Texas, USA
 - title: NeurIPS
   description: Conference on Neural Information Processing Systems
   dblp: null
