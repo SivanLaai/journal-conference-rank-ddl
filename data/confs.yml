@@ -518,6 +518,15 @@
     timezone: UTC-12
     date: Oct 29 - Nov 2, 2023
     place: San Diego, CA, USA
+  - year: 2024
+    id: iccad2024
+    link: https://2024.iccad.com/
+    timeline:
+    - deadline: '2024-05-05 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-10-27'
+    place: null
 - title: ICCD
   description: International Conference on Computer Design
   dblp: null
