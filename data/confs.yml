@@ -15,6 +15,23 @@
     timezone: UTC+8
     date: '2023-11-04'
     place: null
+- title: APCCAS
+  description: null
+  dblp: null
+  sub: DS
+  rank: N
+  home_link: null
+  remark: null
+  confs:
+  - year: 2024
+    id: apccas2024
+    link: https://apccas2024.org/
+    timeline:
+    - deadline: '2024-06-20 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-11-07'
+    place: null
 - title: ARITH
   description: null
   dblp: null
@@ -572,6 +589,23 @@
     timezone: UTC+8
     date: '2024-11-18'
     place: null
+- title: IEDM
+  description: null
+  dblp: null
+  sub: DS
+  rank: N
+  home_link: null
+  remark: null
+  confs:
+  - year: 2024
+    id: iedm2024
+    link: https://www.ieee-iedm.org/
+    timeline:
+    - deadline: '2024-07-11 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-12-07'
+    place: null
 - title: IEEE SiPS
   description: null
   dblp: null
@@ -1041,6 +1075,23 @@
       comment: Full Paper Deadline
     timezone: UTC+8
     date: '2024-06-16'
+    place: null
+- title: VLSID
+  description: null
+  dblp: null
+  sub: DS
+  rank: N
+  home_link: null
+  remark: null
+  confs:
+  - year: 2024
+    id: vlsid2024
+    link: https://vlsid.org/
+    timeline:
+    - deadline: '2023-08-28 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-01-06'
     place: null
 - title: VLSID/ICVD
   description: International Conference on VLSI Design
