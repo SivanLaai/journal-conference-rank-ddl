@@ -312,6 +312,15 @@
     timezone: AoE
     date: March 25-27, 2024
     place: Valencia, Spain
+  - year: 2025
+    id: date2025
+    link: https://www.date-conference.com/date-2025-call-papers
+    timeline:
+    - deadline: '2024-09-15 23:59:59'
+      comment: Full Paper Deadline
+    timezone: AoE
+    date: March 31- April 2, 2025
+    place: Palais des congrès de Lyon, Lyon, France
 - title: ECOC
   description: European Conference on Optical Communications
   dblp: null
@@ -539,11 +548,11 @@
     id: iccad2024
     link: https://2024.iccad.com/
     timeline:
-    - deadline: '2024-05-05 00:00:00'
+    - deadline: '2024-04-28 23:59:59'
       comment: Full Paper Deadline
-    timezone: UTC+8
-    date: '2024-10-27'
-    place: null
+    timezone: UTC-12
+    date: October 27 - 31, 2024
+    place: New Jersey, USA
 - title: ICCD
   description: International Conference on Computer Design
   dblp: null
