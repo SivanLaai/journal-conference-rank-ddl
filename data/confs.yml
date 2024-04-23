@@ -572,6 +572,17 @@
     timezone: AoE
     date: November 6-8, 2023
     place: Washington DC, USA
+  - year: 2024
+    id: iccd2024
+    link: https://www.iccd-conf.com/Call_for_papers.html
+    timeline:
+    - deadline: '2023-05-05 23:59:00'
+      comment: Abstract Deadline
+    - deadline: '2023-05-12 23:59:00'
+      comment: Full Paper Deadline
+    timezone: AoE
+    date: November 6-8, 2023
+    place: Milan, Italy
 - title: ICECS
   description: IEEE International Conference on Electronics, Circuits and Systems
   dblp: null
