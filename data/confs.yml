@@ -15,6 +15,15 @@
     timezone: UTC+8
     date: '2023-11-04'
     place: null
+  - year: 2024
+    id: acp2024
+    link: https://www.acpconf.com/
+    timeline:
+    - deadline: '2024-08-01 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-11-02'
+    place: null
 - title: APCCAS
   description: null
   dblp: null
@@ -129,6 +138,15 @@
     timezone: AoE
     date: Jan 22-25, 2024
     place: Sondo Convensia, Incheon, Korea
+  - year: 2025
+    id: aspdac2025
+    link: https://www.aspdac.com/aspdac2025/
+    timeline:
+    - deadline: '2024-07-12 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2025-01-20'
+    place: null
 - title: A-SSCC
   description: IEEE Asian Solid-State Circuits Conference
   dblp: null
@@ -576,12 +594,12 @@
     id: iccd2024
     link: https://www.iccd-conf.com/Call_for_papers.html
     timeline:
-    - deadline: '2023-05-05 23:59:00'
+    - deadline: '2024-05-05 23:59:00'
       comment: Abstract Deadline
-    - deadline: '2023-05-12 23:59:00'
+    - deadline: '2024-05-12 23:59:00'
       comment: Full Paper Deadline
     timezone: AoE
-    date: November 6-8, 2023
+    date: November, 2024
     place: Milan, Italy
 - title: ICECS
   description: IEEE International Conference on Electronics, Circuits and Systems
@@ -973,6 +991,15 @@
       comment: Full Paper Deadline
     timezone: UTC+8
     date: '2023-10-30'
+    place: null
+  - year: 2024
+    id: norcas2024
+    link: https://events.tuni.fi/norcas2024/
+    timeline:
+    - deadline: '2024-08-15 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-10-29'
     place: null
 - title: OFC
   description: null
