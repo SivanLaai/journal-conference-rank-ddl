@@ -592,14 +592,14 @@
     place: Washington DC, USA
   - year: 2024
     id: iccd2024
-    link: https://www.iccd-conf.com/Call_for_papers.html
+    link: https://www.iccd-conf.com/Home.html
     timeline:
     - deadline: '2024-05-05 23:59:00'
       comment: Abstract Deadline
-    - deadline: '2024-05-12 23:59:00'
+    - deadline: '2024-05-12 00:00:00'
       comment: Full Paper Deadline
     timezone: AoE
-    date: November, 2024
+    date: '2024-11-03'
     place: Milan, Italy
 - title: ICECS
   description: IEEE International Conference on Electronics, Circuits and Systems
