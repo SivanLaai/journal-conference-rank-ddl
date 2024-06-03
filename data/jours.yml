@@ -64,22 +64,6 @@
   sub: DS
   id: integration
   link: null
-- title: IOTJ
-  description: IEEE Internet of Things Journal
-  acceptance_rate: null
-  submission: https://mc.manuscriptcentral.com/iot
-  dblp: iotj
-  page: null
-  review_duration: 2.0
-  ranks:
-  - C
-  - casQ1
-  - jcrQ1
-  - IF 10.6
-  remark: 物联网比较好的期刊，尝试将IOT结合起来，CV的论文可以投到这
-  sub: DS
-  id: iotj
-  link: https://ieee-iotj.org/
 - title: JETC
   description: ACM Journal on Emerging Technologies in Computing Systems
   acceptance_rate: null
@@ -186,7 +170,7 @@
   review_duration: 4.5
   ranks:
   - C
-  - casQ2
+  - casQ1
   - jcrQ1
   remark: '《IEEE Transactions on Circuits and Systems I: Regular Papers》是一份由IEEE出版的国际期刊，主要涵盖了与电路理论、分析、设计、实现以及电路技术在系统和信号处理中的应用相关的研究。
 
