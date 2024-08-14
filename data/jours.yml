@@ -124,9 +124,7 @@
   page: null
   review_duration: null
   ranks:
-  - casQ2
-  - jcrQ2
-  - IF 5.234
+  - N
   remark: 三个月的审稿周期，
   sub: DS
   id: tbiocas
@@ -139,9 +137,7 @@
   page: null
   review_duration: null
   ranks:
-  - A
-  - casQ2
-  - jcrQ2
+  - N
   remark: 系统方向的顶会
   sub: DS
   id: tc
@@ -155,9 +151,7 @@
   page: null
   review_duration: null
   ranks:
-  - A
-  - casQ3
-  - jcrQ3
+  - N
   sub: DS
   id: tcad
   link: null
@@ -169,9 +163,7 @@
   page: null
   review_duration: 4.5
   ranks:
-  - C
-  - casQ1
-  - jcrQ1
+  - N
   remark: '《IEEE Transactions on Circuits and Systems I: Regular Papers》是一份由IEEE出版的国际期刊，主要涵盖了与电路理论、分析、设计、实现以及电路技术在系统和信号处理中的应用相关的研究。
 
     该期刊包括了从基础科学理论到工业应用的整个范围。该期刊的影响因子在2020年为3.6，属于电子与电气工程领域的Q1区期刊。该期刊的审稿周期平均为4.5个月，接收率约为25%。
@@ -185,13 +177,10 @@
   acceptance_rate: 0.4
   submission: https://ieee.atyponrex.com/journal/TCAS2
   dblp: null
-  page: 6
+  page: null
   review_duration: 2.9
   ranks:
-  - C
-  - casQ2
-  - jcrQ2
-  - IF 4.4
+  - N
   remark: '《IEEE Transactions on Circuits and Systems II: Express Briefs》是一份由IEEE出版的国际期刊，主要涵盖了与电路理论、分析、设计、实现以及电路技术在系统和信号处理中的应用相关的研究。
 
     该期刊的特点是发表简短的论文，通常不超过6页，以快速传播最新的研究成果。该期刊的影响因子在2020年为3.2，属于电子与电气工程领域的Q2区期刊。该期刊的审稿周期平均为2.9个月，接收率约为40%。
@@ -210,9 +199,7 @@
   page: null
   review_duration: null
   ranks:
-  - B
-  - casQ1
-  - jcrQ1
+  - N
   sub: DS
   id: tcsvt
   link: null
@@ -250,9 +237,7 @@
   page: null
   review_duration: 3.0
   ranks:
-  - B
-  - casQ3
-  - jcrQ3
+  - N
   sub: DS
   id: todaes
   link: null
@@ -277,10 +262,7 @@
   page: null
   review_duration: 3.8
   ranks:
-  - B
-  - casQ2
-  - jcrQ2
-  - IF 2.3
+  - N
   remark: '《IEEE Transactions on Very Large Scale Integration (VLSI) Systems》是一份由IEEE出版的国际期刊，主要涵盖了与超大规模集成电路系统相关的理论、设计、测试、应用和技术方面的研究。
 
     该期刊的影响因子在2020年为2.3，属于电子与电气工程领域的Q2区期刊。该期刊的审稿周期平均为3.8个月，接收率约为30%。 在这个领域，该期刊是一份有一定影响力和质量的期刊，但并不是最顶尖的期刊。
