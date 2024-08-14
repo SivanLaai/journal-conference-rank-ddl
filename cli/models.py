@@ -53,7 +53,7 @@ class Journal(Base):
     dblp = Column(String(255))
     home_link = Column(String(255))
     submission = Column(String(255))
-    page_number = Column(INTEGER(11))
+    page = Column(INTEGER(11))
     acceptance_rate = Column(Float)
     review_duration = Column(Float)
     remark = Column(String(1000))

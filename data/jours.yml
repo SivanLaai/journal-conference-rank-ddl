@@ -20,7 +20,7 @@
   review_duration: null
   ranks:
   - N
-  remark: 大小类均四区。IET老牌期刊
+  remark: ��С���������IET�����ڿ�
   sub: DS
   id: eap
   link: null
@@ -33,7 +33,7 @@
   review_duration: null
   ranks:
   - N
-  remark: 大小类均二区。器件类顶刊，但设计类也能发。从国内教职的功利角度来说，性价比颇高。首先是作为IC设计极少的JCR一区（非中科院），简历能标注好看点。而且观察过几家微电子强校的内部推荐期刊列表，EDL和TMTT,TCAS-1同档，但对于设计领域来说EDL的难度却略低。所以在长文Trans悲剧前提下，转投EDL性价比较高
+  remark: ��С��������������ඥ�����������Ҳ�ܷ����ӹ��ڽ�ְ�Ĺ����Ƕ���˵���Լ۱��ĸߡ���������ΪIC��Ƽ��ٵ�JCRһ�������п�Ժ���������ܱ�ע�ÿ��㡣���ҹ۲������΢����ǿУ���ڲ��Ƽ��ڿ��б���EDL��TMTT,TCAS-1ͬ�������������������˵EDL���Ѷ�ȴ�Ե͡������ڳ���Trans����ǰ���£�תͶEDL�Լ۱Ƚϸ�
   sub: DS
   id: edl
   link: null
@@ -46,7 +46,7 @@
   review_duration: null
   ranks:
   - N
-  remark: 大小类均四区。IET老牌期刊，虽然是四区，但其实在行业内还是有一定声誉，至少比一些微电子不常见的高分区期刊要强一点。
+  remark: ��С���������IET�����ڿ�����Ȼ������������ʵ����ҵ�ڻ�����һ�����������ٱ�һЩ΢���Ӳ������ĸ߷����ڿ�Ҫǿһ�㡣
   sub: DS
   id: el
   link: null
@@ -86,7 +86,7 @@
   review_duration: null
   ranks:
   - casQ1
-  remark: 一区Top，最顶级期刊没有之一，实至名归没有什么好说的
+  remark: һ��Top������ڿ�û��֮һ��ʵ������û��ʲô��˵��
   sub: DS
   id: jssc
   link: null
@@ -99,7 +99,7 @@
   review_duration: null
   ranks:
   - N
-  remark: 大类二区，小类三区。RFIC/MMIC方向，个人感觉比短文的TCAS-2要略低半档。
+  remark: ���������С��������RFIC/MMIC���򣬸��˸о��ȶ��ĵ�TCAS-2Ҫ�ԵͰ뵵��
   sub: DS
   id: mwcl
   link: null
@@ -112,7 +112,7 @@
   review_duration: null
   ranks:
   - N
-  remark: SSCS主办的新刊，尚未收录中科院分区，但刊文质量颇高，未来可期。
+  remark: SSCS������¿�����δ��¼�п�Ժ�����������������ĸߣ�δ�����ڡ�
   sub: DS
   id: sscl
   link: null
@@ -124,10 +124,8 @@
   page: null
   review_duration: null
   ranks:
-  - casQ2
-  - jcrQ2
-  - IF 5.234
-  remark: 三个月的审稿周期，
+  - N
+  remark: �����µ�������ڣ�
   sub: DS
   id: tbiocas
   link: null
@@ -139,10 +137,8 @@
   page: null
   review_duration: null
   ranks:
-  - A
-  - casQ2
-  - jcrQ2
-  remark: 系统方向的顶会
+  - N
+  remark: ϵͳ����Ķ���
   sub: DS
   id: tc
   link: null
@@ -155,9 +151,7 @@
   page: null
   review_duration: null
   ranks:
-  - A
-  - casQ3
-  - jcrQ3
+  - N
   sub: DS
   id: tcad
   link: null
@@ -169,14 +163,12 @@
   page: null
   review_duration: 4.5
   ranks:
-  - C
-  - casQ1
-  - jcrQ1
-  remark: '《IEEE Transactions on Circuits and Systems I: Regular Papers》是一份由IEEE出版的国际期刊，主要涵盖了与电路理论、分析、设计、实现以及电路技术在系统和信号处理中的应用相关的研究。
+  - N
+  remark: '��IEEE Transactions on Circuits and Systems I: Regular Papers����һ����IEEE����Ĺ����ڿ�����Ҫ���������·���ۡ���������ơ�ʵ���Լ���·������ϵͳ���źŴ����е�Ӧ����ص��о���
 
-    该期刊包括了从基础科学理论到工业应用的整个范围。该期刊的影响因子在2020年为3.6，属于电子与电气工程领域的Q1区期刊。该期刊的审稿周期平均为4.5个月，接收率约为25%。
+    ���ڿ������˴ӻ�����ѧ���۵���ҵӦ�õ�������Χ�����ڿ���Ӱ��������2020��Ϊ3.6�����ڵ�����������������Q1���ڿ������ڿ����������ƽ��Ϊ4.5���£�������ԼΪ25%��
 
-    在这个领域，该期刊是一份非常有影响力和质量的期刊，是最顶尖的期刊之一。如果您想发表您的研究成果，您可以考虑该期刊作为一个理想的目标，但也要注意该期刊的竞争力和要求很高，需要您的论文有很强的创新性和实验验证'
+    ��������򣬸��ڿ���һ�ݷǳ���Ӱ�������������ڿ����������ڿ�֮һ��������뷢�������о��ɹ��������Կ��Ǹ��ڿ���Ϊһ�������Ŀ�꣬��ҲҪע����ڿ��ľ�������Ҫ��ܸߣ���Ҫ���������к�ǿ�Ĵ����Ժ�ʵ����֤'
   sub: DS
   id: tcasi
   link: null
@@ -185,20 +177,17 @@
   acceptance_rate: 0.4
   submission: https://ieee.atyponrex.com/journal/TCAS2
   dblp: null
-  page: 6
+  page: null
   review_duration: 2.9
   ranks:
-  - C
-  - casQ2
-  - jcrQ2
-  - IF 4.4
-  remark: '《IEEE Transactions on Circuits and Systems II: Express Briefs》是一份由IEEE出版的国际期刊，主要涵盖了与电路理论、分析、设计、实现以及电路技术在系统和信号处理中的应用相关的研究。
+  - N
+  remark: '��IEEE Transactions on Circuits and Systems II: Express Briefs����һ����IEEE����Ĺ����ڿ�����Ҫ���������·���ۡ���������ơ�ʵ���Լ���·������ϵͳ���źŴ����е�Ӧ����ص��о���
 
-    该期刊的特点是发表简短的论文，通常不超过6页，以快速传播最新的研究成果。该期刊的影响因子在2020年为3.2，属于电子与电气工程领域的Q2区期刊。该期刊的审稿周期平均为2.9个月，接收率约为40%。
+    ���ڿ����ص��Ƿ�����̵����ģ�ͨ��������6ҳ���Կ��ٴ������µ��о��ɹ������ڿ���Ӱ��������2020��Ϊ3.2�����ڵ�����������������Q2���ڿ������ڿ����������ƽ��Ϊ2.9���£�������ԼΪ40%��
 
-    在这个领域，该期刊是一份有一定影响力和质量的期刊，但不是最顶尖的期刊。如果您想发表您的研究成果，并且您的论文篇幅较短，您可以考虑该期刊作为一个可选的目标，但也可以寻找更高水平的期刊，如《IEEE
-    Transactions on Circuits and Systems I: Regular Papers》或《IEEE Journal of Solid-State
-    Circuits》等。'
+    ��������򣬸��ڿ���һ����һ��Ӱ�������������ڿ��������������ڿ���������뷢�������о��ɹ���������������ƪ���϶̣������Կ��Ǹ��ڿ���Ϊһ����ѡ��Ŀ�꣬��Ҳ����Ѱ�Ҹ���ˮƽ���ڿ����硶IEEE
+    Transactions on Circuits and Systems I: Regular Papers����IEEE Journal of Solid-State
+    Circuits���ȡ�'
   sub: DS
   id: tcasii
   link: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8920
@@ -210,9 +199,7 @@
   page: null
   review_duration: null
   ranks:
-  - B
-  - casQ1
-  - jcrQ1
+  - N
   sub: DS
   id: tcsvt
   link: null
@@ -225,7 +212,7 @@
   review_duration: null
   ranks:
   - N
-  remark: 大类二区，小类三区。器件类顶刊之一，但设计类工作也有涉及，但一般来说不能算是主流选择。创新程度相比EDL略低一点，但工作要求更系统。
+  remark: ���������С�������������ඥ��֮һ��������๤��Ҳ���漰����һ����˵������������ѡ�񡣴��³̶����EDL�Ե�һ�㣬������Ҫ���ϵͳ��
   sub: DS
   id: ted
   link: null
@@ -238,7 +225,7 @@
   review_duration: null
   ranks:
   - N
-  remark: 大类一区Top，小类二区。RFIC/MMIC方向可投。和属于同档次的长文Trans期刊TCAS-1相比，似乎审稿时间要慢不少。
+  remark: ����һ��Top��С�������RFIC/MMIC�����Ͷ��������ͬ���εĳ���Trans�ڿ�TCAS-1��ȣ��ƺ����ʱ��Ҫ�����١�
   sub: DS
   id: tmtt
   link: null
@@ -250,9 +237,7 @@
   page: null
   review_duration: 3.0
   ranks:
-  - B
-  - casQ3
-  - jcrQ3
+  - N
   sub: DS
   id: todaes
   link: null
@@ -265,7 +250,7 @@
   review_duration: null
   ranks:
   - N
-  remark: 大小类均二区。工作频率要求极高，年刊文量较少，似乎都没刊满。
+  remark: ��С�������������Ƶ��Ҫ�󼫸ߣ��꿯�������٣��ƺ���û������
   sub: DS
   id: ttst
   link: null
@@ -277,16 +262,13 @@
   page: null
   review_duration: 3.8
   ranks:
-  - B
-  - casQ2
-  - jcrQ2
-  - IF 2.3
-  remark: '《IEEE Transactions on Very Large Scale Integration (VLSI) Systems》是一份由IEEE出版的国际期刊，主要涵盖了与超大规模集成电路系统相关的理论、设计、测试、应用和技术方面的研究。
+  - N
+  remark: '��IEEE Transactions on Very Large Scale Integration (VLSI) Systems����һ����IEEE����Ĺ����ڿ�����Ҫ�������볬���ģ���ɵ�·ϵͳ��ص����ۡ���ơ����ԡ�Ӧ�úͼ���������о���
 
-    该期刊的影响因子在2020年为2.3，属于电子与电气工程领域的Q2区期刊。该期刊的审稿周期平均为3.8个月，接收率约为30%。 在这个领域，该期刊是一份有一定影响力和质量的期刊，但并不是最顶尖的期刊。
+    ���ڿ���Ӱ��������2020��Ϊ2.3�����ڵ�����������������Q2���ڿ������ڿ����������ƽ��Ϊ3.8���£�������ԼΪ30%�� ��������򣬸��ڿ���һ����һ��Ӱ�������������ڿ����������������ڿ���
 
-    如果您想发表您的研究成果，您可以考虑该期刊作为一个可选的目标，但也可以寻找更高水平的期刊，如《IEEE Transactions on Computer-Aided
-    Design of Integrated Circuits and Systems》或《IEEE Journal of Solid-State Circuits》等。'
+    ������뷢�������о��ɹ��������Կ��Ǹ��ڿ���Ϊһ����ѡ��Ŀ�꣬��Ҳ����Ѱ�Ҹ���ˮƽ���ڿ����硶IEEE Transactions on Computer-Aided
+    Design of Integrated Circuits and Systems����IEEE Journal of Solid-State Circuits���ȡ�'
   sub: DS
   id: tvlsi
   link: null

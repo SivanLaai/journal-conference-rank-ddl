@@ -252,7 +252,7 @@ sec-ch-ua-platform: "Windows"'''.replace(": ",":")
             curr_j["acceptance_rate"] = jour.acceptance_rate
             curr_j["submission"] = jour.submission
             curr_j["dblp"] = jour.dblp
-            curr_j["page"] = jour.page_number
+            curr_j["page"] = jour.page
             curr_j["review_duration"] = jour.review_duration
             curr_j["ranks"] = list()
             if jour.ccf:
@@ -272,6 +272,52 @@ sec-ch-ua-platform: "Windows"'''.replace(": ",":")
             curr_j["link"] = jour.home_link
             Jours.append(curr_j)
         return Jours
+
+    # save yaml info to mysql
+    def saveConferenceAndJournalInfoToDatabase(self):
+        try:
+
+            # yaml.dump(Jours, sort_keys=False, allow_unicode=True)
+            with open(r'data/jours.yml', 'rb') as file:
+                jours = yaml.load(file.read(), Loader=yaml.FullLoader)
+                format_jours = list()
+                for jour in jours:
+                    curr_jour = dict()
+                    curr_jour["id"] = jour["id"]
+                    curr_jour["name"] = jour["title"]
+                    curr_jour["full_name"] = jour["description"]
+                    curr_jour["submission"] = jour["submission"]
+                    curr_jour["home_link"] = jour["link"]
+                    curr_jour["acceptance_rate"] = jour["acceptance_rate"]
+                    curr_jour["review_duration"] = jour["review_duration"]
+                    ranks = jour["ranks"]
+                    print(ranks)
+                    for rank in ranks:
+                        if "cas" in rank:
+                            curr_jour["cas"] = rank.replace("cas", "")
+                        elif "jcr" in rank:
+                            curr_jour["jcr"] = rank.replace("jcr", "")
+                        elif "IF" in rank:
+                            curr_jour["if"] = rank.replace("IF ", "")
+                        else:
+                            curr_jour["ccf"] = rank
+                    format_jours.append(curr_jour)
+                # db_jours = self.db.query(Journal).filter(Conference.id==id).all()
+                db_jours = self.db.query(Journal).all()
+                if not len(db_jours):
+                    self.db.bulk_insert_mappings(Journal, format_jours)
+                    self.db.commit()
+                else:
+                    for jour in format_jours:
+                        self.db.query(Journal).filter(Journal.id==jour["id"]).update(jour)
+                        self.db.commit()
+
+            # Confs = self.getConferenceList()
+
+            # with open(r'data/confs.yml', 'w') as file:
+            #     yaml.safe_dump(list(Confs), file, sort_keys=False, allow_unicode=True)
+        except Exception as e:
+            print(e)
     
     def saveConferenceAndJournalInfo(self):
         try:
@@ -307,3 +353,4 @@ if "__main__" == __name__:
     info = crawler.crawlConferenceFromWebsite()
     info = crawler.crawlConferenceFromCCFDDL()
     info = crawler.saveConferenceAndJournalInfo()
+    # crawler.saveConferenceAndJournalInfoToDatabase()

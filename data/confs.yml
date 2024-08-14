@@ -15,6 +15,32 @@
     timezone: UTC+8
     date: '2023-11-04'
     place: null
+  - year: 2024
+    id: acp2024
+    link: https://www.acpconf.com/
+    timeline:
+    - deadline: '2024-08-01 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-11-02'
+    place: null
+- title: APCCAS
+  description: null
+  dblp: null
+  sub: DS
+  rank: N
+  home_link: null
+  remark: null
+  confs:
+  - year: 2024
+    id: apccas2024
+    link: https://apccas2024.org/
+    timeline:
+    - deadline: '2024-06-20 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-11-07'
+    place: null
 - title: ARITH
   description: null
   dblp: null
@@ -31,6 +57,15 @@
       comment: Full Paper Deadline
     timezone: UTC+8
     date: '2023-09-04'
+    place: null
+  - year: 2024
+    id: arith2024
+    link: https://www.ac.uma.es/arith2024/
+    timeline:
+    - deadline: '2024-01-25 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-06-10'
     place: null
 - title: ASAP
   description: Application-Specific Systems, Architectures, and Processors
@@ -49,6 +84,15 @@
     timezone: UTC+8
     date: '2023-07-19'
     place: null
+  - year: 2024
+    id: asap2024
+    link: https://www.asap2024.org/
+    timeline:
+    - deadline: '2024-02-26 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-07-24'
+    place: null
 - title: Asilomar Conf
   description: null
   dblp: null
@@ -65,6 +109,15 @@
       comment: Full Paper Deadline
     timezone: UTC+8
     date: '2023-10-29'
+    place: null
+  - year: 2024
+    id: asilomarconf2024
+    link: https://www.asilomarsscconf.org/
+    timeline:
+    - deadline: '2024-05-01 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-10-27'
     place: null
 - title: ASP-DAC
   description: Asia and South Pacific Design Automation Conference
@@ -85,6 +138,17 @@
     timezone: AoE
     date: Jan 22-25, 2024
     place: Sondo Convensia, Incheon, Korea
+  - year: 2025
+    id: aspdac2025
+    link: https://www.aspdac.com/aspdac2025/
+    timeline:
+    - deadline: '2024-07-05 17:00:00'
+      comment: Abstract Deadline
+    - deadline: '2024-07-12 17:00:00'
+      comment: Full Paper Deadline
+    timezone: AoE
+    date: Jan 20-23, 2025
+    place: Tokyo Odaiba Miraikan, Japan
 - title: A-SSCC
   description: IEEE Asian Solid-State Circuits Conference
   dblp: null
@@ -101,6 +165,15 @@
       comment: Full Paper Deadline
     timezone: UTC+8
     date: '2023-11-05'
+    place: null
+  - year: 2024
+    id: asscc2024
+    link: https://a-sscc2024.org/
+    timeline:
+    - deadline: '2024-06-10 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-11-18'
     place: null
 - title: ATS
   description: IEEE Asian Test Symposium
@@ -136,6 +209,15 @@
     timezone: UTC+8
     date: '2023-05-09 00:00:00'
     place: null
+  - year: 2024
+    id: cf2024
+    link: https://www.computingfrontiers.org/2024/
+    timeline:
+    - deadline: '2024-01-08 23:59:59'
+      comment: Full Paper Deadline
+    timezone: AoE
+    date: May 7-9, 2024
+    place: Ischia, Italy
 - title: CICC
   description: IEEE Custom Integrated Circuits Conference
   dblp: null
@@ -169,6 +251,15 @@
       comment: Full Paper Deadline
     timezone: UTC+8
     date: '2023-04-19'
+    place: null
+  - year: 2024
+    id: coolchips2024
+    link: https://www.coolchips.org/2024/
+    timeline:
+    - deadline: '2024-02-27 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-04-17'
     place: null
 - title: DAC
   description: Design Automation Conference
@@ -206,7 +297,7 @@
     timeline:
     - deadline: '2023-11-13 17:00:00'
       comment: Abstract Deadline
-    - deadline: '2023-11-20 17:00:00'
+    - deadline: '2023-11-13 17:00:00'
       comment: Full Paper Deadline
     timezone: UTC-8
     date: June 23-27, 2024
@@ -241,6 +332,15 @@
     timezone: AoE
     date: March 25-27, 2024
     place: Valencia, Spain
+  - year: 2025
+    id: date2025
+    link: https://www.date-conference.com/date-2025-call-papers
+    timeline:
+    - deadline: '2024-09-15 23:59:59'
+      comment: Full Paper Deadline
+    timezone: AoE
+    date: March 31- April 2, 2025
+    place: Palais des congr®®s de Lyon, Lyon, France
 - title: ECOC
   description: European Conference on Optical Communications
   dblp: null
@@ -257,6 +357,15 @@
       comment: Full Paper Deadline
     timezone: UTC+8
     date: '2023-10-01'
+    place: null
+  - year: 2024
+    id: ecoc2024
+    link: https://www.ecoc2024.org/
+    timeline:
+    - deadline: '2024-04-24 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-09-22'
     place: null
 - title: ESSCIRC
   description: null
@@ -275,6 +384,23 @@
     timezone: UTC+8
     date: '2023-09-11'
     place: null
+- title: ESSERC
+  description: null
+  dblp: null
+  sub: DS
+  rank: N
+  home_link: null
+  remark: null
+  confs:
+  - year: 2024
+    id: esserc2024
+    link: https://www.esserc2024.org/
+    timeline:
+    - deadline: '2024-04-05 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-09-09'
+    place: null
 - title: ESWeek
   description: null
   dblp: null
@@ -292,6 +418,15 @@
     timezone: UTC+8
     date: '2023-09-17'
     place: null
+  - year: 2024
+    id: esweek2024
+    link: https://esweek.org/
+    timeline:
+    - deadline: '2024-03-31 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-09-29'
+    place: null
 - title: ETS
   description: European Test Symposium
   dblp: null
@@ -302,13 +437,13 @@
   confs:
   - year: 2024
     id: ets2024
-    link: null
+    link: https://ets24.ewi.tudelft.nl/
     timeline:
-    - deadline: '2023-01-01 23:59:59'
+    - deadline: '2023-12-08 23:59:59'
       comment: Full Paper Deadline
-    timezone: UTC+8
-    date: null
-    place: null
+    timezone: AoE
+    date: May 20-24, 2024
+    place: The Hague, Netherlands
 - title: Euromicro DSD
   description: null
   dblp: null
@@ -373,6 +508,15 @@
     timezone: UTC+8
     date: '2023-06-05'
     place: null
+  - year: 2024
+    id: glsvlsi2024
+    link: https://www.glsvlsi.org/
+    timeline:
+    - deadline: '2024-02-09 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-06-15'
+    place: null
 - title: HOT CHIPS
   description: 'Hot Chips: A Symposium on High Performance Chips'
   dblp: null
@@ -420,6 +564,15 @@
     timezone: UTC-12
     date: Oct 29 - Nov 2, 2023
     place: San Diego, CA, USA
+  - year: 2024
+    id: iccad2024
+    link: https://2024.iccad.com/
+    timeline:
+    - deadline: '2024-04-28 23:59:59'
+      comment: Full Paper Deadline
+    timezone: UTC-12
+    date: October 27 - 31, 2024
+    place: New Jersey, USA
 - title: ICCD
   description: International Conference on Computer Design
   dblp: null
@@ -439,6 +592,17 @@
     timezone: AoE
     date: November 6-8, 2023
     place: Washington DC, USA
+  - year: 2024
+    id: iccd2024
+    link: https://www.iccd-conf.com/Call_for_papers.html
+    timeline:
+    - deadline: '2024-05-05 23:59:00'
+      comment: Abstract Deadline
+    - deadline: '2024-05-20 23:59:00'
+      comment: Full Paper Deadline
+    timezone: AoE
+    date: November, 2024
+    place: Milan, Italy
 - title: ICECS
   description: IEEE International Conference on Electronics, Circuits and Systems
   dblp: null
@@ -456,13 +620,56 @@
     timezone: UTC+8
     date: '2023-12-04'
     place: null
+  - year: 2024
+    id: icecs2024
+    link: https://ieee-icecs2024.org/
+    timeline:
+    - deadline: '2024-06-03 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-11-18'
+    place: null
+- title: IEDM
+  description: null
+  dblp: null
+  sub: DS
+  rank: N
+  home_link: null
+  remark: null
+  confs:
+  - year: 2024
+    id: iedm2024
+    link: https://www.ieee-iedm.org/
+    timeline:
+    - deadline: '2024-07-11 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-12-07'
+    place: null
+- title: IEEE SiPS
+  description: null
+  dblp: null
+  sub: DS
+  rank: N
+  home_link: null
+  remark: null
+  confs:
+  - year: 2024
+    id: ieeesips2024
+    link: ieee-sips.org/
+    timeline:
+    - deadline: '2024-04-03 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-11-24'
+    place: null
 - title: ISCAS
   description: International Symposium on Circuits and Systems
   dblp: null
   sub: DS
   rank: C
   home_link: null
-  remark: Áõ∏ÂØπÊØîËæÉÂ•Ω‰∏≠ÔºåËÆ∫ÊñáÂ•ΩÁöÑÂùèÁöÑÈÉΩÊúâ
+  remark: œ‡∂‘±»Ωœ∫√÷–£¨¬€Œƒ∫√µƒªµµƒ∂º”–
   confs:
   - year: 2024
     id: iscas2024
@@ -472,8 +679,19 @@
       comment: Full Paper Deadline
     - deadline: '2023-10-22 23:59:59'
       comment: Extended Full Paper Deadline
+    - deadline: '2023-10-31 23:59:59'
+      comment: Extended Full Paper Deadline
     timezone: UTC-7
     date: '2024-05-29'
+    place: null
+  - year: 2025
+    id: iscas2025
+    link: https://2025.ieee-iscas.org/
+    timeline:
+    - deadline: '2024-10-14 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2025-05-25'
     place: null
 - title: ISLPED
   description: International Symposium on Low Power Electronics and Design
@@ -492,6 +710,15 @@
     timezone: UTC+8
     date: '2023-08-07'
     place: null
+  - year: 2024
+    id: islped2024
+    link: https://www.islped.org/2024/
+    timeline:
+    - deadline: '2024-03-11 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-08-05'
+    place: null
 - title: ISOCC
   description: International SoC Conference
   dblp: null
@@ -508,6 +735,15 @@
       comment: Full Paper Deadline
     timezone: UTC+8
     date: '2023-10-25'
+    place: null
+  - year: 2024
+    id: isocc2024
+    link: https://isocc.org/
+    timeline:
+    - deadline: '2024-04-25 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-08-19'
     place: null
 - title: ISPD
   description: International Symposium on Physical Design
@@ -526,6 +762,15 @@
     timezone: UTC+8
     date: '2024-03-12'
     place: null
+  - year: 2025
+    id: ispd2025
+    link: https://ispd.cc/ispd2025/
+    timeline:
+    - deadline: '2024-09-29 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2025-03-16'
+    place: null
 - title: ISQED
   description: International Symposium on Quality Electronic Design
   dblp: null
@@ -543,13 +788,22 @@
     timezone: UTC+8
     date: '2024-04-03'
     place: null
+  - year: 2025
+    id: isqed2025
+    link: https://www.isqed.org/
+    timeline:
+    - deadline: '2024-09-27 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2025-04-09'
+    place: null
 - title: ISSCC
   description: IEEE International Solid-State Circuits Conference
   dblp: null
   sub: DS
   rank: N
   home_link: null
-  remark: ÈõÜÊàêÁîµË∑ØÊúÄÈ´ò‰ºöËÆÆÔºåÂæàÈöæ
+  remark: ºØ≥…µÁ¬∑◊Ó∏ﬂª·“È£¨∫‹ƒ—
   confs:
   - year: 2024
     id: isscc2024
@@ -559,6 +813,15 @@
       comment: Full Paper Deadline
     timezone: UTC+8
     date: '2024-02-18'
+    place: null
+  - year: 2025
+    id: isscc2025
+    link: https://www.isscc.org/
+    timeline:
+    - deadline: '2024-09-04 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2025-02-14'
     place: null
 - title: ISVLSI
   description: null
@@ -577,13 +840,22 @@
     timezone: UTC+8
     date: '2023-06-20'
     place: null
+  - year: 2024
+    id: isvlsi2024
+    link: https://www.ieee-isvlsi.org/
+    timeline:
+    - deadline: '2024-03-04 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-07-01'
+    place: null
 - title: ITC
   description: International Test Conference
   dblp: null
   sub: DS
   rank: B
   home_link: null
-  remark: ÊµãËØïÈ¢ÜÂüüÈ°∂‰ºö
+  remark: ≤‚ ‘¡Ï”Ú∂•ª·
   confs:
   - year: 2024
     id: itc2024
@@ -627,6 +899,15 @@
       comment: Full Paper Deadline
     timezone: UTC+8
     date: '2024-02-27'
+    place: null
+  - year: 2025
+    id: lascas2025
+    link: https://www.ufrgs.br/lascas/
+    timeline:
+    - deadline: '2024-09-06 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2025-02-25'
     place: null
 - title: LATW
   description: 'Latin American Test Workshop '
@@ -686,6 +967,61 @@
     timezone: UTC-7
     date: Oct, 2023
     place: Toronto, Canada
+  - year: 2024
+    id: micro2024
+    link: https://microarch.org/micro57/
+    timeline:
+    - deadline: '2024-04-11 11:59:59'
+      comment: Abstract Deadline
+    - deadline: '2024-04-18 11:59:59'
+      comment: Full Paper Deadline
+    timezone: UTC-5
+    date: November 2-6, 2024
+    place: Austin, Texas, USA
+- title: NeurIPS
+  description: Conference on Neural Information Processing Systems
+  dblp: null
+  sub: AI
+  rank: A
+  home_link: null
+  remark: null
+  confs:
+  - year: 2021
+    id: neurips2021
+    link: https://neurips.cc/Conferences/2021/
+    timeline:
+    - deadline: '2021-05-21 20:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+0
+    date: December 5-14, 2021
+    place: Virtual
+  - year: 2022
+    id: neurips2022
+    link: https://neurips.cc/Conferences/2022
+    timeline:
+    - deadline: '2022-05-16 20:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+0
+    date: November 28-December 9, 2022
+    place: New Orleans, Louisiana, USA
+  - year: 2023
+    id: neurips2023
+    link: https://neurips.cc/Conferences/2023
+    timeline:
+    - deadline: '2023-05-11 20:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+0
+    date: November 28-December 9, 2023
+    place: New Orleans, Louisiana, USA
+  - year: 2024
+    id: neurips2024
+    link: https://neurips.cc/Conferences/2024
+    timeline:
+    - deadline: '2024-05-22 20:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+0
+    date: December 9-December 15, 2024
+    place: Vancouver, Canada
 - title: NorCAS
   description: null
   dblp: null
@@ -703,6 +1039,15 @@
     timezone: UTC+8
     date: '2023-10-30'
     place: null
+  - year: 2024
+    id: norcas2024
+    link: https://events.tuni.fi/norcas2024/
+    timeline:
+    - deadline: '2024-08-15 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-10-29'
+    place: null
 - title: OFC
   description: null
   dblp: null
@@ -719,6 +1064,15 @@
       comment: Full Paper Deadline
     timezone: UTC+8
     date: '2024-03-24'
+    place: null
+  - year: 2025
+    id: ofc2025
+    link: https://www.ofcconference.org/en-us/home/
+    timeline:
+    - deadline: '2024-10-22 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2025-03-30'
     place: null
 - title: SAMOS
   description: null
@@ -773,6 +1127,15 @@
     timezone: UTC-7
     date: October 30 - November 1, 2023
     place: California, USA
+  - year: 2024
+    id: socc2024
+    link: https://acmsocc.org/2024/
+    timeline:
+    - deadline: '2024-07-08 17:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC-4
+    date: November 20-22, 2024
+    place: Redmond, USA
 - title: SPPCom
   description: null
   dblp: null
@@ -790,6 +1153,15 @@
     timezone: UTC+8
     date: '2023-07-09'
     place: null
+  - year: 2024
+    id: sppcom2024
+    link: optica.org/PhotonicsOPC
+    timeline:
+    - deadline: '2024-04-09 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-07-28'
+    place: null
 - title: Symp VLSI Circuits
   description: null
   dblp: null
@@ -806,6 +1178,32 @@
       comment: Full Paper Deadline
     timezone: UTC+8
     date: '2024-06-16'
+    place: null
+- title: VLSID
+  description: null
+  dblp: null
+  sub: DS
+  rank: N
+  home_link: null
+  remark: null
+  confs:
+  - year: 2024
+    id: vlsid2024
+    link: https://vlsid.org/
+    timeline:
+    - deadline: '2023-08-28 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-01-06'
+    place: null
+  - year: 2025
+    id: vlsid2025
+    link: https://vlsid.org/
+    timeline:
+    - deadline: '2024-07-30 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2025-01-04'
     place: null
 - title: VLSID/ICVD
   description: International Conference on VLSI Design
@@ -840,6 +1238,15 @@
       comment: Full Paper Deadline
     timezone: UTC+8
     date: '2023-10-16'
+    place: null
+  - year: 2024
+    id: vlsisoc2024
+    link: https://vlsisoc2024.nl/
+    timeline:
+    - deadline: '2024-04-08 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2024-10-06'
     place: null
 - title: VLSI-TSA
   description: null
@@ -891,4 +1298,13 @@
       comment: Full Paper Deadline
     timezone: UTC+8
     date: '2024-04-22'
+    place: null
+  - year: 2025
+    id: vts2025
+    link: https://tttc-vts.org/
+    timeline:
+    - deadline: '2024-11-08 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2025-04-28'
     place: null
