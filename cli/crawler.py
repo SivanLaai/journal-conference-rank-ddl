@@ -156,16 +156,18 @@ sec-ch-ua-platform: "Windows"'''.replace(": ",":")
         for conf in all_conf:
             if conf["title"] not in eda_confs:
                 continue
-            curr_db_conf = self.db.query(Conference).filter(Conference.name==conf["name"]).all()
+            curr_db_conf = self.db.query(Conference).filter(Conference.name==conf["title"]).all()
             print(conf)
             if len(curr_db_conf):
                 curr_db_conf_data = dict()
-                curr_db_conf_data["id"] = conf["id"]
-                curr_db_conf_data["ccf"] = conf["rank"]
+                curr_db_conf_data["id"] = conf["dblp"]
+                curr_db_conf_data["dblp"] = conf["dblp"]
+                curr_db_conf_data["ccf"] = conf["rank"]["ccf"]
                 curr_db_conf_data["full_name"] = conf["description"]
-                self.db.query(Conference).filter(Conference.name==curr_db_conf["name"]).update(curr_db_conf_data)
+                curr_db_conf_data["sub"] = conf["sub"]
+                self.db.query(Conference).filter(Conference.name==conf["title"]).update(curr_db_conf_data)
             for c in conf["confs"]:
-                id = conf["title"].lower().replace(" ","").replace("-","").replace("/","")
+                id = conf["dblp"].lower().replace(" ","").replace("-","").replace("/","")
                 year = c["year"]
                 data = dict()
                 data["link"] = c["link"]
@@ -184,7 +186,7 @@ sec-ch-ua-platform: "Windows"'''.replace(": ",":")
                         data["extended_deadline"] = list(c["timeline"][i].values())[0]
                 confs = self.db.query(ConferenceDetail).filter(ConferenceDetail.id==id, ConferenceDetail.year==int(year)).all()
                 if data["deadline"] == "TBD":
-                   data["deadline"] = "0001-01-01 00:00:00"
+                   data["deadline"] = None
                 if len(confs):
                     # f.write(f"{id},{year}\n")
                     # f.write(f"query: {confs[0].id},{confs[0].year}\n\n")
