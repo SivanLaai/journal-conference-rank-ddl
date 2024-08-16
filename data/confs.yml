@@ -121,7 +121,7 @@
     place: null
 - title: ASP-DAC
   description: Asia and South Pacific Design Automation Conference
-  dblp: null
+  dblp: aspdac
   sub: DS
   rank: C
   home_link: null
@@ -194,7 +194,7 @@
     place: null
 - title: CF
   description: ACM International Conference on Computing Frontiers
-  dblp: null
+  dblp: cf
   sub: DS
   rank: C
   home_link: null
@@ -263,7 +263,7 @@
     place: null
 - title: DAC
   description: Design Automation Conference
-  dblp: null
+  dblp: dac
   sub: DS
   rank: A
   home_link: null
@@ -304,7 +304,7 @@
     place: San Francisco, CA
 - title: DATE
   description: Design, Automation & Test in Europe
-  dblp: null
+  dblp: date
   sub: DS
   rank: B
   home_link: null
@@ -428,8 +428,8 @@
     date: '2024-09-29'
     place: null
 - title: ETS
-  description: European Test Symposium
-  dblp: null
+  description: IEEE European Test Symposium
+  dblp: ets
   sub: DS
   rank: C
   home_link: null
@@ -463,7 +463,7 @@
     place: null
 - title: FPGA
   description: ACM/SIGDA International Symposium on Field-Programmable Gate Arrays
-  dblp: null
+  dblp: fpga
   sub: DS
   rank: B
   home_link: null
@@ -536,7 +536,7 @@
     place: null
 - title: ICCAD
   description: IEEE/ACM International Conference on Computer-Aided Design
-  dblp: null
+  dblp: iccad
   sub: DS
   rank: B
   home_link: null
@@ -575,7 +575,7 @@
     place: New Jersey, USA
 - title: ICCD
   description: International Conference on Computer Design
-  dblp: null
+  dblp: iccd
   sub: DS
   rank: B
   home_link: null
@@ -629,6 +629,61 @@
     timezone: UTC+8
     date: '2024-11-18'
     place: null
+- title: ICRA
+  description: IEEE International Conference on Robotics and Automation
+  dblp: icra
+  sub: AI
+  rank: B
+  home_link: null
+  remark: null
+  confs:
+  - year: 2022
+    id: icra2022
+    link: https://www.icra2022.org/
+    timeline:
+    - deadline: '2021-09-15 02:59:00'
+      comment: Full Paper Deadline
+    timezone: UTC-8
+    date: May 23-27, 2022
+    place: Philadelphia (PA), USA
+  - year: 2023
+    id: icra2023
+    link: https://www.icra2023.org/
+    timeline:
+    - deadline: '2022-09-15 23:59:59'
+      comment: Full Paper Deadline
+    timezone: UTC-8
+    date: May 29- June 2, 2023
+    place: ExCeL London, UK
+  - year: 2024
+    id: icra2024
+    link: https://2024.ieee-icra.org
+    timeline:
+    - deadline: '2023-09-15 23:59:00'
+      comment: Full Paper Deadline
+    timezone: UTC-8
+    date: May 13-17, 2024
+    place: Yokohama, Japan
+  - year: 2025
+    id: icra2025
+    link: https://2025.ieee-icra.org
+    timeline:
+    - deadline: '2024-07-15 12:00:00'
+      comment: Abstract Deadline
+    - deadline: '2024-09-15 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC-4
+    date: May 19-23, 2025
+    place: Atlanta (GA), USA
+  - year: 2026
+    id: icra2026
+    link: https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra
+    timeline:
+    - deadline: '2023-01-01 23:59:59'
+      comment: Full Paper Deadline
+    timezone: UTC+1
+    date: Jun 1-5, 2026
+    place: Vienna, Austria
 - title: IEDM
   description: null
   dblp: null
@@ -927,10 +982,10 @@
     date: null
     place: null
 - title: MICRO
-  description: null
-  dblp: null
+  description: IEEE/ACM International Symposium on Microarchitecture
+  dblp: micro
   sub: DS
-  rank: N
+  rank: A
   home_link: null
   remark: null
   confs:
@@ -980,14 +1035,14 @@
     place: Austin, Texas, USA
 - title: NeurIPS
   description: Conference on Neural Information Processing Systems
-  dblp: null
+  dblp: nips
   sub: AI
   rank: A
   home_link: null
   remark: null
   confs:
   - year: 2021
-    id: neurips2021
+    id: nips2021
     link: https://neurips.cc/Conferences/2021/
     timeline:
     - deadline: '2021-05-21 20:00:00'
@@ -996,7 +1051,7 @@
     date: December 5-14, 2021
     place: Virtual
   - year: 2022
-    id: neurips2022
+    id: nips2022
     link: https://neurips.cc/Conferences/2022
     timeline:
     - deadline: '2022-05-16 20:00:00'
@@ -1005,7 +1060,7 @@
     date: November 28-December 9, 2022
     place: New Orleans, Louisiana, USA
   - year: 2023
-    id: neurips2023
+    id: nips2023
     link: https://neurips.cc/Conferences/2023
     timeline:
     - deadline: '2023-05-11 20:00:00'
@@ -1014,7 +1069,7 @@
     date: November 28-December 9, 2023
     place: New Orleans, Louisiana, USA
   - year: 2024
-    id: neurips2024
+    id: nips2024
     link: https://neurips.cc/Conferences/2024
     timeline:
     - deadline: '2024-05-22 20:00:00'
@@ -1109,10 +1164,10 @@
     date: '2022-11-02'
     place: null
 - title: SoCC
-  description: IEEE International System-on-Chip Conference
-  dblp: null
+  description: ACM Symposium on Cloud Computing
+  dblp: socc
   sub: DS
-  rank: N
+  rank: B
   home_link: null
   remark: null
   confs:
