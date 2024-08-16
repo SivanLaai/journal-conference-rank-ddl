@@ -156,6 +156,14 @@ sec-ch-ua-platform: "Windows"'''.replace(": ",":")
         for conf in all_conf:
             if conf["title"] not in eda_confs:
                 continue
+            curr_db_conf = self.db.query(Conference).filter(Conference.name==conf["name"]).all()
+            print(conf)
+            if len(curr_db_conf):
+                curr_db_conf_data = dict()
+                curr_db_conf_data["id"] = conf["id"]
+                curr_db_conf_data["ccf"] = conf["rank"]
+                curr_db_conf_data["full_name"] = conf["description"]
+                self.db.query(Conference).filter(Conference.name==curr_db_conf["name"]).update(curr_db_conf_data)
             for c in conf["confs"]:
                 id = conf["title"].lower().replace(" ","").replace("-","").replace("/","")
                 year = c["year"]
