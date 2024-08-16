@@ -175,6 +175,8 @@ sec-ch-ua-platform: "Windows"'''.replace(": ",":")
                     for i in range(2, len(c["timeline"])):
                         data["extended_deadline"] = list(c["timeline"][i].values())[0]
                 confs = self.db.query(ConferenceDetail).filter(ConferenceDetail.id==id, ConferenceDetail.year==int(year)).all()
+                if data["deadline"] == "TBD":
+                   data["deadline"] = "0001-01-01 00:00:00"
                 if len(confs):
                     # f.write(f"{id},{year}\n")
                     # f.write(f"query: {confs[0].id},{confs[0].year}\n\n")
