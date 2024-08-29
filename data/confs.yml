@@ -1320,6 +1320,15 @@
     timezone: UTC+8
     date: '2024-04-22'
     place: null
+  - year: 2025
+    id: vlsitsa2025
+    link: https://expo.itri.org.tw/2025VLSITSA
+    timeline:
+    - deadline: '2024-12-02 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2025-04-21'
+    place: null
 - title: VLSI-TSA-DAT
   description: International VLSI Symposium on Technology, Systems and Applications
   dblp: null
