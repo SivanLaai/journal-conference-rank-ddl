@@ -1209,6 +1209,23 @@
     timezone: UTC-4
     date: November 20-22, 2024
     place: Redmond, USA
+- title: SPI
+  description: null
+  dblp: null
+  sub: DS
+  rank: N
+  home_link: null
+  remark: null
+  confs:
+  - year: 2025
+    id: spi2025
+    link: https://spi-workshop.org/
+    timeline:
+    - deadline: '2024-12-20 00:00:00'
+      comment: Full Paper Deadline
+    timezone: UTC+8
+    date: '2025-05-11'
+    place: null
 - title: SPPCom
   description: null
   dblp: null
