@@ -103,6 +103,18 @@
   sub: DS
   id: mwcl
   link: null
+- title: null
+  description: NEURAL COMPUTING & APPLICATIONS
+  acceptance_rate: null
+  submission: null
+  dblp: null
+  page: null
+  review_duration: null
+  ranks:
+  - N
+  sub: DS
+  id: neuca
+  link: https://www.letpub.com.cn/index.php?page=journalapp&view=detail&journalid=6123
 - title: SSCL
   description: IEEE Solid-State Circuits Letters
   acceptance_rate: null
