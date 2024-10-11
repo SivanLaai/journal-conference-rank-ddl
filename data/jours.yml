@@ -103,7 +103,7 @@
   sub: DS
   id: mwcl
   link: null
-- title: null
+- title: NCA
   description: NEURAL COMPUTING & APPLICATIONS
   acceptance_rate: null
   submission: null
@@ -111,10 +111,37 @@
   page: null
   review_duration: null
   ranks:
-  - N
+  - C
   sub: DS
-  id: neuca
+  id: ncaa
   link: https://www.letpub.com.cn/index.php?page=journalapp&view=detail&journalid=6123
+- title: NPL
+  description: Neural Processing Letters
+  acceptance_rate: null
+  submission: null
+  dblp: null
+  page: null
+  review_duration: null
+  ranks:
+  - C
+  - casQ4
+  sub: DS
+  id: nple
+  link: https://www.letpub.com.cn/index.php?https://www.letpub.com.cn/index.php?journalid=6128&page=journalapp&view=detail
+- title: SOCO
+  description: Soft Computing
+  acceptance_rate: null
+  submission: null
+  dblp: null
+  page: null
+  review_duration: null
+  ranks:
+  - C
+  - casQ3
+  remark: On Hold
+  sub: DS
+  id: soco
+  link: https://www.letpub.com.cn/index.php?journalid=7538&page=journalapp&view=detail
 - title: SSCL
   description: IEEE Solid-State Circuits Letters
   acceptance_rate: null
