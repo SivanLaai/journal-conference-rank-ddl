@@ -67,15 +67,6 @@
     timezone: UTC+8
     date: '2024-06-10'
     place: null
-  - year: 2025
-    id: arith2025
-    link: https://www.arith2025.org/
-    timeline:
-    - deadline: '2024-12-06 00:00:00'
-      comment: Full Paper Deadline
-    timezone: UTC+8
-    date: '2025-05-04'
-    place: null
 - title: ASAP
   description: Application-Specific Systems, Architectures, and Processors
   dblp: null
@@ -130,7 +121,7 @@
     place: null
 - title: ASP-DAC
   description: Asia and South Pacific Design Automation Conference
-  dblp: aspdac
+  dblp: null
   sub: DS
   rank: C
   home_link: null
@@ -203,7 +194,7 @@
     place: null
 - title: CF
   description: ACM International Conference on Computing Frontiers
-  dblp: cf
+  dblp: null
   sub: DS
   rank: C
   home_link: null
@@ -244,15 +235,6 @@
     timezone: UTC+8
     date: '2024-04-21'
     place: null
-  - year: 2025
-    id: cicc2025
-    link: https://www.ieee-cicc.org/
-    timeline:
-    - deadline: '2024-11-11 00:00:00'
-      comment: Full Paper Deadline
-    timezone: UTC+8
-    date: '2025-04-13'
-    place: null
 - title: COOL Chips
   description: null
   dblp: null
@@ -279,18 +261,9 @@
     timezone: UTC+8
     date: '2024-04-17'
     place: null
-  - year: 2025
-    id: coolchips2025
-    link: https://www.coolchips.org/2025/
-    timeline:
-    - deadline: '2025-02-07 00:00:00'
-      comment: Full Paper Deadline
-    timezone: UTC+8
-    date: '2025-04-16'
-    place: null
 - title: DAC
   description: Design Automation Conference
-  dblp: dac
+  dblp: null
   sub: DS
   rank: A
   home_link: null
@@ -329,18 +302,9 @@
     timezone: UTC-8
     date: June 23-27, 2024
     place: San Francisco, CA
-  - year: 2025
-    id: dac2025
-    link: https://www.dac.com/Conference/2025-Call-for-Contributions
-    timeline:
-    - deadline: '2024-11-13 09:00:00'
-      comment: Full Paper Deadline
-    timezone: UTC-8
-    date: June 22-25, 2025
-    place: San Francisco, CA
 - title: DATE
   description: Design, Automation & Test in Europe
-  dblp: date
+  dblp: null
   sub: DS
   rank: B
   home_link: null
@@ -376,7 +340,7 @@
       comment: Full Paper Deadline
     timezone: AoE
     date: March 31- April 2, 2025
-    place: Palais des congr√®s de Lyon, Lyon, France
+    place: Palais des congr®®s de Lyon, Lyon, France
 - title: ECOC
   description: European Conference on Optical Communications
   dblp: null
@@ -464,8 +428,8 @@
     date: '2024-09-29'
     place: null
 - title: ETS
-  description: IEEE European Test Symposium
-  dblp: ets
+  description: European Test Symposium
+  dblp: null
   sub: DS
   rank: C
   home_link: null
@@ -499,7 +463,7 @@
     place: null
 - title: FPGA
   description: ACM/SIGDA International Symposium on Field-Programmable Gate Arrays
-  dblp: fpga
+  dblp: null
   sub: DS
   rank: B
   home_link: null
@@ -526,17 +490,6 @@
       comment: Full Paper Deadline
     timezone: UTC-7
     date: March 3 - March 5, 2024
-    place: Monterey, California, USA
-  - year: 2025
-    id: fpga2025
-    link: https://www.isfpga.org/
-    timeline:
-    - deadline: '2024-10-01 23:59:59'
-      comment: Abstract Deadline
-    - deadline: '2024-10-08 23:59:59'
-      comment: Full Paper Deadline
-    timezone: UTC-12
-    date: February 27 - March 01, 2025
     place: Monterey, California, USA
 - title: GLSVLSI
   description: Great Lakes Symposium on VLSI
@@ -583,7 +536,7 @@
     place: null
 - title: ICCAD
   description: IEEE/ACM International Conference on Computer-Aided Design
-  dblp: iccad
+  dblp: null
   sub: DS
   rank: B
   home_link: null
@@ -622,7 +575,7 @@
     place: New Jersey, USA
 - title: ICCD
   description: International Conference on Computer Design
-  dblp: iccd
+  dblp: null
   sub: DS
   rank: B
   home_link: null
@@ -676,61 +629,6 @@
     timezone: UTC+8
     date: '2024-11-18'
     place: null
-- title: ICRA
-  description: IEEE International Conference on Robotics and Automation
-  dblp: icra
-  sub: AI
-  rank: B
-  home_link: null
-  remark: null
-  confs:
-  - year: 2022
-    id: icra2022
-    link: https://www.icra2022.org/
-    timeline:
-    - deadline: '2021-09-15 02:59:00'
-      comment: Full Paper Deadline
-    timezone: UTC-8
-    date: May 23-27, 2022
-    place: Philadelphia (PA), USA
-  - year: 2023
-    id: icra2023
-    link: https://www.icra2023.org/
-    timeline:
-    - deadline: '2022-09-15 23:59:59'
-      comment: Full Paper Deadline
-    timezone: UTC-8
-    date: May 29- June 2, 2023
-    place: ExCeL London, UK
-  - year: 2024
-    id: icra2024
-    link: https://2024.ieee-icra.org
-    timeline:
-    - deadline: '2023-09-15 23:59:00'
-      comment: Full Paper Deadline
-    timezone: UTC-8
-    date: May 13-17, 2024
-    place: Yokohama, Japan
-  - year: 2025
-    id: icra2025
-    link: https://2025.ieee-icra.org
-    timeline:
-    - deadline: '2024-07-15 12:00:00'
-      comment: Abstract Deadline
-    - deadline: '2024-09-15 00:00:00'
-      comment: Full Paper Deadline
-    timezone: UTC-4
-    date: May 19-23, 2025
-    place: Atlanta (GA), USA
-  - year: 2026
-    id: icra2026
-    link: https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra
-    timeline:
-    - deadline: '2023-01-01 23:59:59'
-      comment: Full Paper Deadline
-    timezone: UTC+1
-    date: Jun 1-5, 2026
-    place: Vienna, Austria
 - title: IEDM
   description: null
   dblp: null
@@ -766,12 +664,12 @@
     date: '2024-11-24'
     place: null
 - title: ISCAS
-  description: IEEE International Symposium on Circuits and Systems
-  dblp: iscas
+  description: International Symposium on Circuits and Systems
+  dblp: null
   sub: DS
   rank: C
   home_link: null
-  remark: Áõ∏ÂØπÊØîËæÉÂ•Ω‰∏≠ÔºåËÆ∫ÊñáÂ•ΩÁöÑÂùèÁöÑÈÉΩÊúâ
+  remark: œ‡∂‘±»Ωœ∫√÷–£¨¬€Œƒ∫√µƒªµµƒ∂º”–
   confs:
   - year: 2024
     id: iscas2024
@@ -790,11 +688,11 @@
     id: iscas2025
     link: https://2025.ieee-iscas.org/
     timeline:
-    - deadline: '2024-10-14 23:59:59'
+    - deadline: '2024-10-14 00:00:00'
       comment: Full Paper Deadline
-    timezone: AoE
-    date: May 25-28, 2025
-    place: London, UK
+    timezone: UTC+8
+    date: '2025-05-25'
+    place: null
 - title: ISLPED
   description: International Symposium on Low Power Electronics and Design
   dblp: null
@@ -905,7 +803,7 @@
   sub: DS
   rank: N
   home_link: null
-  remark: ÈõÜÊàêÁîµË∑ØÊúÄÈ´ò‰ºöËÆÆÔºåÂæàÈöæ
+  remark: ºØ≥…µÁ¬∑◊Ó∏ﬂª·“È£¨∫‹ƒ—
   confs:
   - year: 2024
     id: isscc2024
@@ -951,22 +849,13 @@
     timezone: UTC+8
     date: '2024-07-01'
     place: null
-  - year: 2025
-    id: isvlsi2025
-    link: https://www.ieee-isvlsi.org/
-    timeline:
-    - deadline: '2025-02-10 00:00:00'
-      comment: Full Paper Deadline
-    timezone: UTC+8
-    date: '2025-07-06'
-    place: null
 - title: ITC
   description: International Test Conference
   dblp: null
   sub: DS
   rank: B
   home_link: null
-  remark: ÊµãËØïÈ¢ÜÂüüÈ°∂‰ºö
+  remark: ≤‚ ‘¡Ï”Ú∂•ª·
   confs:
   - year: 2024
     id: itc2024
@@ -1038,10 +927,10 @@
     date: null
     place: null
 - title: MICRO
-  description: IEEE/ACM International Symposium on Microarchitecture
-  dblp: micro
+  description: null
+  dblp: null
   sub: DS
-  rank: A
+  rank: N
   home_link: null
   remark: null
   confs:
@@ -1091,14 +980,14 @@
     place: Austin, Texas, USA
 - title: NeurIPS
   description: Conference on Neural Information Processing Systems
-  dblp: nips
+  dblp: null
   sub: AI
   rank: A
   home_link: null
   remark: null
   confs:
   - year: 2021
-    id: nips2021
+    id: neurips2021
     link: https://neurips.cc/Conferences/2021/
     timeline:
     - deadline: '2021-05-21 20:00:00'
@@ -1107,7 +996,7 @@
     date: December 5-14, 2021
     place: Virtual
   - year: 2022
-    id: nips2022
+    id: neurips2022
     link: https://neurips.cc/Conferences/2022
     timeline:
     - deadline: '2022-05-16 20:00:00'
@@ -1116,7 +1005,7 @@
     date: November 28-December 9, 2022
     place: New Orleans, Louisiana, USA
   - year: 2023
-    id: nips2023
+    id: neurips2023
     link: https://neurips.cc/Conferences/2023
     timeline:
     - deadline: '2023-05-11 20:00:00'
@@ -1125,7 +1014,7 @@
     date: November 28-December 9, 2023
     place: New Orleans, Louisiana, USA
   - year: 2024
-    id: nips2024
+    id: neurips2024
     link: https://neurips.cc/Conferences/2024
     timeline:
     - deadline: '2024-05-22 20:00:00'
@@ -1220,10 +1109,10 @@
     date: '2022-11-02'
     place: null
 - title: SoCC
-  description: ACM Symposium on Cloud Computing
-  dblp: socc
+  description: IEEE International System-on-Chip Conference
+  dblp: null
   sub: DS
-  rank: B
+  rank: N
   home_link: null
   remark: null
   confs:
@@ -1247,23 +1136,6 @@
     timezone: UTC-4
     date: November 20-22, 2024
     place: Redmond, USA
-- title: SPI
-  description: null
-  dblp: null
-  sub: DS
-  rank: N
-  home_link: null
-  remark: null
-  confs:
-  - year: 2025
-    id: spi2025
-    link: https://spi-workshop.org/
-    timeline:
-    - deadline: '2024-12-20 00:00:00'
-      comment: Full Paper Deadline
-    timezone: UTC+8
-    date: '2025-05-11'
-    place: null
 - title: SPPCom
   description: null
   dblp: null
@@ -1306,15 +1178,6 @@
       comment: Full Paper Deadline
     timezone: UTC+8
     date: '2024-06-16'
-    place: null
-  - year: 2025
-    id: sympvlsicircuits2025
-    link: https://www.vlsisymposium.org/
-    timeline:
-    - deadline: '2025-01-27 00:00:00'
-      comment: Full Paper Deadline
-    timezone: UTC+8
-    date: '2025-06-08'
     place: null
 - title: VLSID
   description: null
@@ -1401,15 +1264,6 @@
       comment: Full Paper Deadline
     timezone: UTC+8
     date: '2024-04-22'
-    place: null
-  - year: 2025
-    id: vlsitsa2025
-    link: https://expo.itri.org.tw/2025VLSITSA
-    timeline:
-    - deadline: '2024-12-02 00:00:00'
-      comment: Full Paper Deadline
-    timezone: UTC+8
-    date: '2025-04-21'
     place: null
 - title: VLSI-TSA-DAT
   description: International VLSI Symposium on Technology, Systems and Applications
