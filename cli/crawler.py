@@ -160,7 +160,7 @@ sec-ch-ua-platform: "Windows"'''.replace(": ",":")
             print(conf)
             if len(curr_db_conf):
                 curr_db_conf_data = dict()
-                curr_db_conf_data["id"] = conf["dblp"]
+                # curr_db_conf_data["id"] = conf["dblp"]
                 curr_db_conf_data["dblp"] = conf["dblp"]
                 curr_db_conf_data["ccf"] = conf["rank"]["ccf"]
                 curr_db_conf_data["full_name"] = conf["description"]
